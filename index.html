@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" class="scroll-smooth">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18250568935"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18250568935');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فني سيراميك بالرياض | معلم تركيب سيراميك وبورسلان باحترافية عالية - معاينة مجانية</title>
@@ -21,15 +12,15 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ceramics-riyadh.com/">
     <meta property="og:title" content="فني سيراميك بالرياض | معلم تركيب سيراميك وبورسلان باحترافية عالية">
-    <meta property="og:description" content="تنفيذ كافة أعمال البلاط، السيراميك، والبورسلان بأحدث التقنيات وأفضل الأسعار في الرياض. معاينة مجانية وضمان كامل على التنفيذ.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&h=630&q=80">
+    <meta property="og:description" content="تنفيذ كافة أعمال البلاط، السيراميك، والبورسلان بأحدث التقنيات وأفضل الأسعار in الرياض. معاينة مجانية وضمان كامل على التنفيذ.">
+    <meta property="og:image" content="images/2.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://ceramics-riyadh.com/">
     <meta property="twitter:title" content="فني سيراميك بالرياض | معلم تركيب سيراميك وبورسلان">
     <meta property="twitter:description" content="خدمات تركيب السيراميك والبورسلان الفاخر بالرياض. دقة في المواعيد وجودة لا تضاهى.">
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&h=630&q=80">
+    <meta property="twitter:image" content="images/3.jpg">
 
     <!-- Fonts (Cairo & Tajawal) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,20 +37,14 @@
             theme: {
                 extend: {
                     colors: {
-                        charcoal: {
-                            DEFAULT: '#0D0D0D',
-                            light: '#161616',
-                            lighter: '#222222',
-                        },
-                        gold: {
-                            DEFAULT: '#D4AF37',
-                            light: '#F3E5AB',
-                            dark: '#AA7C11',
-                        },
-                        orangeCta: {
-                            DEFAULT: '#FF6B00',
-                            hover: '#E05E00',
-                            light: '#FF8A3D',
+                        brand: {
+                            bg: '#FAF9F6', // Alabaster / warm marble
+                            dark: '#1C1917', // Obsidian / elegant charcoal
+                            gold: '#C5A880', // Premium Champagne Gold
+                            accent: '#D97706', // Warm Amber Gold
+                            card: '#FFFFFF', // Pure White
+                            border: '#E7E5E4', // Stone 200
+                            muted: '#78716C' // Stone 500
                         }
                     },
                     fontFamily: {
@@ -71,145 +56,81 @@
         }
     </script>
 
-    <!-- Custom Premium CSS for Micro-Animations and Special Elements -->
     <style>
-        body {
-            font-family: 'Tajawal', sans-serif;
-            background-color: #0D0D0D;
-            color: #FFFFFF;
+        html, body {
             overflow-x: hidden;
+            background-color: #FAF9F6;
+            color: #1C1917;
+            font-family: 'Tajawal', sans-serif;
+            -webkit-tap-highlight-color: transparent;
         }
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Cairo', sans-serif;
         }
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0D0D0D;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #D4AF37;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #AA7C11;
-        }
-        /* Glassmorphism Styles */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #FAF9F6; }
+        ::-webkit-scrollbar-thumb { background: #C5A880; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #D97706; }
+        
         .glass-header {
-            background: rgba(13, 13, 13, 0.75);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+            background: rgba(250, 249, 246, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(231, 229, 228, 0.5);
         }
-        .glass-card {
-            background: rgba(22, 22, 22, 0.65);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(212, 175, 55, 0.1);
+        .premium-card {
+            background: #FFFFFF;
+            border: 1px solid #E7E5E4;
+            box-shadow: 0 4px 20px -2px rgba(28, 25, 23, 0.03);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .glass-card:hover {
-            border-color: rgba(212, 175, 55, 0.4);
-            transform: translateY(-8px);
-            box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.25);
+        .premium-card:hover {
+            border-color: #C5A880;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px -4px rgba(197, 168, 128, 0.15);
         }
-        /* Pulse Animation for CTA */
-        .pulse-gold {
-            box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
-            animation: pulse-gold-anim 2s infinite;
+
+        /* Dotted timeline line */
+        .step-line::after {
+            content: ''; position: absolute; top: 32px; right: 50px; left: 50px; height: 1px;
+            border-top: 2px dashed rgba(197, 168, 128, 0.4); z-index: -1;
         }
-        @keyframes pulse-gold-anim {
-            0% {
-                transform: scale(1);
-                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
-            }
-            70% {
-                transform: scale(1.03);
-                box-shadow: 0 0 0 12px rgba(212, 175, 55, 0);
-            }
-            100% {
-                transform: scale(1);
-                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
-            }
-        }
-        .pulse-orange {
-            box-shadow: 0 0 0 0 rgba(255, 107, 0, 0.7);
-            animation: pulse-orange-anim 2.5s infinite;
-        }
-        @keyframes pulse-orange-anim {
-            0% {
-                transform: scale(1);
-                box-shadow: 0 0 0 0 rgba(255, 107, 0, 0.7);
-            }
-            70% {
-                transform: scale(1.05);
-                box-shadow: 0 0 0 15px rgba(255, 107, 0, 0);
-            }
-            100% {
-                transform: scale(1);
-                box-shadow: 0 0 0 0 rgba(255, 107, 0, 0);
-            }
-        }
-        /* Custom Before/After Slider Styling */
+        @media (max-width: 1024px) { .step-line::after { display: none; } }
+
+        /* BEFORE / AFTER INTERACTIVE SLIDER STYLING */
         .slider-container {
             position: relative;
             width: 100%;
-            height: 450px;
+            aspect-ratio: 16/10;
             overflow: hidden;
-            border-radius: 16px;
-            border: 2px solid rgba(212, 175, 55, 0.3);
+            border-radius: 1.25rem;
+            border: 1px solid #E7E5E4;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
         }
         @media (max-width: 640px) {
             .slider-container {
-                height: 300px;
+                aspect-ratio: 4/3;
             }
         }
-        .image-before, .image-after {
+        .image-before {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
+            background-image: url('images/2.jpg');
             background-size: cover;
             background-position: center;
-            pointer-events: none;
-        }
-        .image-before {
-            background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1000&q=80');
         }
         .image-after {
-            background-image: url('https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1000&q=80');
-            width: 50%;
-            border-left: 3px solid #D4AF37;
-        }
-        .slider-handle {
             position: absolute;
             top: 0;
-            bottom: 0;
-            left: 50%;
-            width: 4px;
-            background-color: #D4AF37;
-            cursor: ew-resize;
-            transform: translateX(-50%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            pointer-events: none;
-        }
-        .slider-button {
-            width: 44px;
-            height: 44px;
-            background-color: #D4AF37;
-            border: 3px solid #0D0D0D;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #0D0D0D;
-            font-size: 14px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background-image: url('images/3.jpg');
+            background-size: cover;
+            background-position: center;
+            border-left: 2px solid #D97706;
         }
         .slider-range {
             position: absolute;
@@ -219,44 +140,46 @@
             height: 100%;
             opacity: 0;
             cursor: ew-resize;
-            z-index: 10;
+            z-index: 30;
         }
-        /* Scroll Reveal Animation Classes */
+        .slider-handle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: #D97706;
+            z-index: 20;
+            pointer-events: none;
+            transform: translateX(-50%);
+        }
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 44px;
+            height: 44px;
+            background-color: #D97706;
+            color: #FFFFFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(217, 119, 6, 0.4);
+            border: 2px solid #FFFFFF;
+            transition: transform 0.2s ease;
+        }
+        
+        /* Reveal animation framework */
         .reveal {
             opacity: 0;
-            transition: all 0.8s ease-out;
-        }
-        .reveal.fade-up {
-            transform: translateY(40px);
-        }
-        .reveal.fade-left {
-            transform: translateX(-40px);
-        }
-        .reveal.fade-right {
-            transform: translateX(40px);
-        }
-        .reveal.zoom-in {
-            transform: scale(0.9);
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .reveal.active {
             opacity: 1;
-            transform: translate(0) scale(1);
-        }
-        /* Step Process Line connector */
-        .step-line::after {
-            content: '';
-            position: absolute;
-            top: 24px;
-            right: 50px;
-            left: -50px;
-            height: 2px;
-            border-top: 2px dashed rgba(212, 175, 55, 0.3);
-            z-index: -1;
-        }
-        @media (max-width: 1024px) {
-            .step-line::after {
-                display: none;
-            }
+            transform: translateY(0);
         }
     </style>
 
@@ -266,7 +189,7 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "فني سيراميك بالرياض | معلم تركيب سيراميك وبورسلان باحترافية عالية",
-      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&h=630&q=80",
+      "image": "images/4.jpg",
       "@id": "https://ceramics-riyadh.com/#localbusiness",
       "url": "https://ceramics-riyadh.com/",
       "telephone": "+966506218313",
@@ -297,8 +220,7 @@
         ],
         "opens": "00:00",
         "closes": "23:59"
-      },
-      "sameAs": []
+      }
     }
     </script>
 
@@ -313,7 +235,7 @@
           "name": "كم سعر تركيب السيراميك بالرياض؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "يختلف سعر تركيب السيراميك والبورسلان بالرياض بناءً على مساحة المشروع ونوع البلاط المستخدم (سيراميك عادي، بورسلان كبير الحجم، رخام) ونوعية التركيب (بغراء أو خلطة أسمنتية). نقدم دائماً أسعاراً تنافسية مع ضمان جودة التشطيب، ويمكنك الحصول على تسعير فوري ومجاني بعد المعاينة."
+            "text": "يختلف سعر تركيب السيراميك والبورسلان بالرياض بناءً على مساحة المشروع ونوع البلاط المستخدم ونوعية التركيب. نقدم دائماً أسعاراً تنافسية مع ضمان جودة التشطيب، ويمكنك الحصول على تسعير فوري ومجاني بعد المعاينة."
           }
         },
         {
@@ -321,7 +243,7 @@
           "name": "هل توفرون تركيب بورسلان كبير الحجم؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "نعم، نحن متخصصون في تركيب وقص وتفصيل البورسلان كبير الحجم (الواجهات والأرضيات) باستخدام أحدث الأدوات والماكينات المخصصة لقص البورسلان لضمان تركيب مستوٍ تماماً ودون أي عيوب أو فراغات."
+            "text": "نعم، نحن متخصصون في تركيب وقص وتفصيل البورسلان كبير الحجم باستخدام أحدث الأدوات والماكينات المخصصة لقص البورسلان لضمان تركيب مستوٍ تماماً ودون أي عيوب."
           }
         },
         {
@@ -329,175 +251,159 @@
           "name": "هل تعملون في جميع أحياء الرياض؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "نعم، نقدم خدماتنا في جميع أحياء الرياض بلا استثناء، بما في ذلك أحياء شمال الرياض (الياسمين، الملقا، النرجس، الصحافة، حطين)، شرق الرياض (اليرموك، قرطبة، الروضة)، غرب الرياض (لبن، نمار، السويدي)، وجنوب الرياض (الشفا، بدر، الحزم، الدار البيضاء)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "كم يستغرق تنفيذ المشروع؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "تعتمد المدة الزمنية على مساحة وحجم العمل. الغرف والشقق الصغيرة قد تستغرق من يومين إلى 4 أيام، بينما الفلل والمشاريع الكبيرة يتم تحديد جدولها الزمني بدقة أثناء المعاينة مع التزامنا الكامل بالموعد المتفق عليه."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل توجد معاينة قبل التنفيذ؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "نعم، نوفر خدمة المعاينة المجانية لجميع أحياء الرياض. يقوم الفني بزيارة الموقع، فحص استواء الأرضيات، وقياس المساحات بدقة وتقديم استشارة مجانية مع مقايسة أسعار تفصيلية."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل توفرون مواد التركيب؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "يمكننا توفير كافة مواد التركيب عالية الجودة (مثل الغراء الممتاز، الترويبة المقاومة للرطوبة، زوايا الألمنيوم أو الاستيل) أو العمل بالمواد التي يختارها ويوفرها العميل حسب رغبته وميزانيته."
+            "text": "نعم، نقدم خدماتنا في جميع أحياء الرياض بلا استثناء، بما في ذلك أحياء الشمال، الشرق، الغرب، والجنوب."
           }
         }
       ]
     }
     </script>
 </head>
-<body class="bg-charcoal font-tajawal text-white">
+<body class="bg-brand-bg font-tajawal text-brand-dark">
 
-    <!-- STICKY HEADER -->
+    <!-- COMPACT STICKY HEADER -->
     <header class="fixed top-0 left-0 right-0 z-50 glass-header transition-all duration-300">
-        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="container mx-auto px-4 py-2.5 flex items-center justify-between">
             <!-- Logo -->
-            <a href="#" class="flex items-center space-x-2 space-x-reverse group">
-                <div class="w-10 h-10 bg-gradient-to-br from-gold to-gold-dark rounded-lg flex items-center justify-center text-charcoal shadow-lg group-hover:scale-105 transition-transform duration-300">
-                    <i class="fa-solid fa-hard-hat text-lg"></i>
+            <a href="#" class="flex items-center gap-2.5 group">
+                <div class="w-10 h-10 bg-gradient-to-br from-brand-gold via-brand-accent to-amber-700 rounded-xl flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-table-cells text-lg"></i>
                 </div>
                 <div class="flex flex-col">
-                    <span class="text-lg font-extrabold tracking-wide text-white group-hover:text-gold transition-colors duration-300 leading-tight">معلم سيراميك الرياض</span>
-                    <span class="text-[10px] text-gray-400 font-semibold leading-none">احترافية وضمان في التركيب</span>
+                    <span class="text-base sm:text-lg font-black text-brand-dark group-hover:text-brand-accent transition-colors duration-300 leading-tight">معلم سيراميك الرياض</span>
+                    <span class="text-[10px] text-brand-muted font-bold leading-none mt-0.5">احترافية وتفاصيل هندسية</span>
                 </div>
             </a>
 
             <!-- Navigation Links (Desktop) -->
-            <nav class="hidden md:flex items-center space-x-6 space-x-reverse text-sm font-medium">
-                <a href="#services" class="hover:text-gold transition-colors">خدماتنا</a>
-                <a href="#why-us" class="hover:text-gold transition-colors">لماذا نحن؟</a>
-                <a href="#gallery" class="hover:text-gold transition-colors">أعمالنا</a>
-                <a href="#coverage" class="hover:text-gold transition-colors">مناطق التغطية</a>
-                <a href="#faq" class="hover:text-gold transition-colors">الأسئلة الشائعة</a>
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-bold text-brand-muted">
+                <a href="#services" class="hover:text-brand-accent transition-colors">خدماتنا</a>
+                <a href="#why-us" class="hover:text-brand-accent transition-colors">مميزاتنا</a>
+                <a href="#gallery" class="hover:text-brand-accent transition-colors font-semibold">أعمالنا</a>
+                <a href="#coverage" class="hover:text-brand-accent transition-colors">مناطق التغطية</a>
+                <a href="#faq" class="hover:text-brand-accent transition-colors">الأسئلة الشائعة</a>
             </nav>
 
-            <!-- Sticky Header CTAs (Distributed Numbers) -->
-            <!-- Call CTA -> Number 2 (0590409465) | WhatsApp CTA -> Number 1 (0506218313) -->
-            <div class="flex items-center space-x-2 space-x-reverse">
-                <a href="tel:0590409465" class="bg-charcoal-lighter border border-gold hover:bg-gold hover:text-charcoal text-gold px-3 py-2 rounded-full text-xs sm:text-sm font-bold flex items-center space-x-1.5 space-x-reverse transition-all duration-300">
-                    <i class="fa-solid fa-phone"></i>
-                    <span class="hidden sm:inline">اتصل الآن</span>
-                    <span class="font-mono text-[11px] sm:text-xs">0590409465</span>
+            <!-- Compact Header CTAs -->
+            <div class="flex items-center gap-2">
+                <!-- Mobile Only: Rounded Icon Buttons -->
+                <a href="tel:0590409465" class="lg:hidden w-10 h-10 rounded-full bg-brand-accent text-white flex items-center justify-center shadow-md hover:bg-amber-600 transition-colors" aria-label="اتصال">
+                    <i class="fa-solid fa-phone text-sm"></i>
                 </a>
-                <a href="https://wa.me/966506218313?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D9%83%20%D9%88%D8%A7%D9%84%D8%A8%D9%85%D8%B1%D8%B3%D9%84%D8%A7%D9%86" target="_blank" class="bg-[#25D366] hover:bg-[#20ba59] text-white px-3 py-2 rounded-full text-xs sm:text-sm font-bold flex items-center space-x-1.5 space-x-reverse shadow-md transition-all duration-300">
+                <a href="https://wa.me/966506218313?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%Bاستفسار" target="_blank" class="lg:hidden w-10 h-10 rounded-full bg-[#22C55E] text-white flex items-center justify-center shadow-md hover:bg-green-600 transition-colors" aria-label="واتساب">
                     <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span class="hidden md:inline">واتساب</span>
+                </a>
+
+                <!-- Desktop Only Buttons -->
+                <a href="tel:0590409465" class="hidden lg:flex items-center gap-2 border border-brand-accent/50 hover:bg-brand-accent hover:text-white text-brand-accent px-4 py-2 rounded-xl text-sm font-black transition-all duration-300">
+                    <i class="fa-solid fa-phone text-xs"></i>
+                    <span>اتصل الآن</span>
+                    <span class="font-mono text-xs">0590409465</span>
+                </a>
+                <a href="https://wa.me/966506218313?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1" target="_blank" class="hidden lg:flex items-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white px-4 py-2 rounded-xl text-sm font-black shadow-md transition-all duration-300">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>تواصل واتساب</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(to bottom, rgba(13,13,13,0.85), rgba(13,13,13,0.95)), url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80');">
-        <!-- Golden Decorative Light Rays -->
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gold/10 rounded-full filter blur-[120px] pointer-events-none"></div>
-        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orangeCta/10 rounded-full filter blur-[120px] pointer-events-none"></div>
+    <!-- PREMIUM HERO SECTION -->
+    <section class="relative min-h-[92vh] flex items-center pt-24 pb-16 overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(to bottom, rgba(250,249,246,0.92), rgba(250,249,246,0.97)), url('images/1.jpg');">
+        <!-- Floating Subtle Shapes for Depth -->
+        <div class="absolute top-1/4 left-1/4 w-80 h-80 bg-brand-gold/10 rounded-full filter blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-brand-accent/10 rounded-full filter blur-[100px] pointer-events-none"></div>
 
         <div class="container mx-auto px-4 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <!-- Hero Content -->
-            <div class="lg:col-span-7 text-right space-y-6">
-                <div class="inline-flex items-center space-x-2 space-x-reverse bg-gold/10 border border-gold/30 px-3 py-1.5 rounded-full text-gold text-xs sm:text-sm font-bold animate-pulse">
-                    <i class="fa-solid fa-certificate"></i>
-                    <span>ضمان وجودة تدوم لسنوات طوال</span>
+            <div class="lg:col-span-7 space-y-6 text-right">
+                <div class="inline-flex items-center gap-2 bg-brand-gold/20 border border-brand-gold/40 px-3.5 py-1.5 rounded-full text-amber-800 text-xs sm:text-sm font-extrabold">
+                    <i class="fa-solid fa-star text-brand-accent"></i>
+                    <span>ضمان الجودة والدقة الهندسية في التركيب</span>
                 </div>
                 
-                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-white">
-                    فني سيراميك بالرياض | <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold via-gold-light to-gold-dark">معلم تركيب سيراميك وبورسلان</span> باحترافية عالية
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-brand-dark">
+                    فني سيراميك بالرياض | <span class="text-brand-accent">تركيب السيراميك والبورسلان</span> بدقة ليزر متناهية
                 </h1>
 
-                <p class="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed">
-                    تنفيذ جميع أعمال السيراميك والبورسلان للمنازل والفلل والشقق والاستراحات بأعلى جودة تشطيب وأسعار مناسبة مع التزام كامل بالمواعيد في جميع أحياء الرياض.
+                <p class="text-base sm:text-lg md:text-xl text-brand-muted max-w-2xl leading-relaxed font-medium">
+                    نصنع الجمال في تفاصيل أرضياتك. فني متخصص بتركيب السيراميك، البورسلان، والرخام للفلل والمنازل بمستويات استواء تامة وأحدث معدات القص بالرياض.
                 </p>
 
-                <!-- Urgent Hero CTA Buttons -->
-                <!-- Call CTA -> Number 1 (0506218313) | WhatsApp CTA -> Number 2 (0590409465) -->
-                <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <a href="tel:0506218313" class="pulse-orange bg-gradient-to-r from-orangeCta to-orangeCta-hover hover:from-orangeCta-hover hover:to-orangeCta text-white text-center py-4 px-8 rounded-xl font-extrabold text-lg flex items-center justify-center space-x-3 space-x-reverse shadow-xl transition-all duration-300">
-                        <i class="fa-solid fa-phone text-xl animate-bounce"></i>
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                    <a href="tel:0506218313" class="bg-brand-accent hover:bg-amber-600 text-white text-center py-4 px-8 rounded-2xl font-black text-lg flex items-center justify-center gap-3 shadow-lg shadow-brand-accent/20 transition-all duration-300">
+                        <i class="fa-solid fa-phone text-xl animate-pulse"></i>
                         <span>اتصل الآن: 0506218313</span>
                     </a>
                     
-                    <a href="https://wa.me/966590409465?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D9%83" target="_blank" class="bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#20ba59] hover:to-[#0e7064] text-white text-center py-4 px-8 rounded-xl font-extrabold text-lg flex items-center justify-center space-x-3 space-x-reverse shadow-xl transition-all duration-300">
+                    <a href="https://wa.me/966590409465?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1" target="_blank" class="bg-[#22C55E] hover:bg-[#16A34A] text-white text-center py-4 px-8 rounded-2xl font-black text-lg flex items-center justify-center gap-3 shadow-lg shadow-green-500/20 transition-all duration-300">
                         <i class="fa-brands fa-whatsapp text-2xl"></i>
-                        <span>تواصل واتساب مباشر</span>
+                        <span>محادثة واتساب مباشرة</span>
                     </a>
                 </div>
 
-                <div class="pt-2">
-                    <a href="#quote-form" class="inline-block text-gray-400 hover:text-gold underline text-sm transition-colors duration-300">
-                        أو اطلب معاينة مجانية للموقع الآن <i class="fa-solid fa-chevron-left text-xs mr-1"></i>
-                    </a>
-                </div>
-
-                <!-- Trust Badges -->
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-white/10">
-                    <div class="flex items-center space-x-2 space-x-reverse bg-charcoal-light/60 p-3 rounded-lg border border-white/5">
-                        <i class="fa-solid fa-tags text-gold text-lg"></i>
-                        <span class="text-xs sm:text-sm font-bold text-gray-200">أسعار واضحة</span>
+                <!-- Features list -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-brand-border">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-full bg-brand-gold/20 flex items-center justify-center text-amber-800">
+                            <i class="fa-solid fa-tags text-sm"></i>
+                        </div>
+                        <span class="text-sm font-bold text-brand-dark">أسعار تنافسية</span>
                     </div>
-                    <div class="flex items-center space-x-2 space-x-reverse bg-charcoal-light/60 p-3 rounded-lg border border-white/5">
-                        <i class="fa-solid fa-award text-gold text-lg"></i>
-                        <span class="text-xs sm:text-sm font-bold text-gray-200">تنفيذ احترافي</span>
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-full bg-brand-gold/20 flex items-center justify-center text-amber-800">
+                            <i class="fa-solid fa-square-check text-sm"></i>
+                        </div>
+                        <span class="text-sm font-bold text-brand-dark">ضمان حقيقي</span>
                     </div>
-                    <div class="flex items-center space-x-2 space-x-reverse bg-charcoal-light/60 p-3 rounded-lg border border-white/5">
-                        <i class="fa-solid fa-map-location-dot text-gold text-lg"></i>
-                        <span class="text-xs sm:text-sm font-bold text-gray-200">تغطية كل الرياض</span>
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-full bg-brand-gold/20 flex items-center justify-center text-amber-800">
+                            <i class="fa-solid fa-circle-nodes text-sm"></i>
+                        </div>
+                        <span class="text-sm font-bold text-brand-dark">أحدث أجهزة الليزر</span>
                     </div>
-                    <div class="flex items-center space-x-2 space-x-reverse bg-charcoal-light/60 p-3 rounded-lg border border-white/5">
-                        <i class="fa-solid fa-bolt text-gold text-lg"></i>
-                        <span class="text-xs sm:text-sm font-bold text-gray-200">سرعة في الإنجاز</span>
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-full bg-brand-gold/20 flex items-center justify-center text-amber-800">
+                            <i class="fa-solid fa-truck-fast text-sm"></i>
+                        </div>
+                        <span class="text-sm font-bold text-brand-dark">معاينة فورية</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Hero Form / Visual Box -->
+            <!-- Hero Form -->
             <div class="lg:col-span-5 w-full">
-                <div id="quote-form" class="bg-charcoal-light border-2 border-gold/20 p-6 sm:p-8 rounded-2xl shadow-2xl relative overflow-hidden">
-                    <div class="absolute top-0 right-0 left-0 h-1.5 bg-gradient-to-r from-gold via-gold-light to-gold-dark"></div>
-                    <h3 class="text-xl sm:text-2xl font-bold text-center text-white mb-2">اطلب معاينة مجانية وسعر فوري</h3>
-                    <p class="text-gray-400 text-xs sm:text-sm text-center mb-6">سنتواصل معك خلال 15 دقيقة لتحديد موعد المعاينة</p>
+                <div id="quote-form" class="bg-brand-card border border-brand-border p-6 sm:p-8 rounded-3xl shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 left-0 h-1.5 bg-gradient-to-r from-brand-gold via-brand-accent to-amber-700"></div>
+                    <h3 class="text-xl sm:text-2xl font-black text-center text-brand-dark mb-1">معاينة مجانية للموقع</h3>
+                    <p class="text-brand-muted text-xs sm:text-sm text-center mb-6 font-medium">سجل بياناتك للتواصل معك وتحديد موعد المعاينة مجاناً</p>
                     
                     <form onsubmit="submitForm(event)" class="space-y-4 text-right">
                         <div>
-                            <label class="block text-sm font-semibold text-gray-300 mb-1">الاسم الكريم</label>
-                            <input type="text" required class="w-full bg-charcoal border border-white/10 rounded-lg py-2.5 px-4 text-white focus:outline-none focus:border-gold transition-colors text-right" placeholder="أدخل اسمك بالكامل">
+                            <label class="block text-xs font-bold text-brand-muted mb-1.5">الاسم بالكامل</label>
+                            <input type="text" required class="w-full bg-brand-bg border border-brand-border rounded-xl py-3 px-4 text-brand-dark focus:outline-none focus:border-brand-accent transition-colors text-right font-semibold" placeholder="أدخل اسمك الكريم">
                         </div>
                         <div>
-                            <label class="block text-sm font-semibold text-gray-300 mb-1">رقم الجوال</label>
-                            <input type="tel" required class="w-full bg-charcoal border border-white/10 rounded-lg py-2.5 px-4 text-white focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold text-left font-mono transition-colors" placeholder="05xxxxxxxx">
+                            <label class="block text-xs font-bold text-brand-muted mb-1.5">رقم الجوال</label>
+                            <input type="tel" required class="w-full bg-brand-bg border border-brand-border rounded-xl py-3 px-4 text-brand-dark focus:outline-none focus:border-brand-accent text-left font-mono transition-colors font-semibold" placeholder="05xxxxxxxx">
                         </div>
                         <div>
-                            <label class="block text-sm font-semibold text-gray-300 mb-1">نوع الخدمة المطلوبة</label>
-                            <select class="w-full bg-charcoal border border-white/10 rounded-lg py-2.5 px-4 text-white focus:outline-none focus:border-gold transition-colors">
+                            <label class="block text-xs font-bold text-brand-muted mb-1.5">نوع الخدمة المطلوبة</label>
+                            <select class="w-full bg-brand-bg border border-brand-border rounded-xl py-3 px-4 text-brand-dark focus:outline-none focus:border-brand-accent transition-colors font-semibold">
                                 <option>تركيب سيراميك أرضيات</option>
-                                <option>تركيب سيراميك جدران</option>
-                                <option>تركيب بورسلان فاخر</option>
-                                <option>قص وتفصيل بورسلان</option>
-                                <option>ترميم البلاط التالف</option>
-                                <option>تشطيب فلل / شقق بالكامل</option>
-                                <option>غير ذلك</option>
+                                <option>تركيب بورسلان فاخر مقاسات كبيرة</option>
+                                <option>تركيب بلاط جدران ومطابخ</option>
+                                <option>قص وشطف زوايا بورسلان (45 درجة)</option>
+                                <option>ترميم البلاط القديم وتعديل الاستواء</option>
+                                <option>تشطيب حمامات ومطابخ وعزل كامل</option>
                             </select>
                         </div>
                         <div>
-                            <label class="block text-sm font-semibold text-gray-300 mb-1">الحي بالرياض</label>
-                            <input type="text" required class="w-full bg-charcoal border border-white/10 rounded-lg py-2.5 px-4 text-white focus:outline-none focus:border-gold transition-colors text-right" placeholder="مثال: حي الياسمين، الصحافة، قرطبة">
+                            <label class="block text-xs font-bold text-brand-muted mb-1.5">الحي بالرياض</label>
+                            <input type="text" required class="w-full bg-brand-bg border border-brand-border rounded-xl py-3 px-4 text-brand-dark focus:outline-none focus:border-brand-accent transition-colors text-right font-semibold" placeholder="مثال: حي الملقا، الياسمين">
                         </div>
-                        <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-gold-dark to-gold hover:from-gold hover:to-gold-light text-charcoal font-black rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-gold/20">
-                            إرسال الطلب الآن <i class="fa-solid fa-paper-plane mr-2 text-sm"></i>
+                        <button type="submit" class="w-full py-3.5 mt-2 bg-gradient-to-r from-brand-accent to-amber-600 hover:from-amber-600 hover:to-brand-accent text-white font-black rounded-xl text-lg transition-all duration-300 shadow-md">
+                            حجز موعد المعاينة مجاناً <i class="fa-solid fa-paper-plane mr-2 text-sm"></i>
                         </button>
                     </form>
                 </div>
@@ -505,221 +411,161 @@
         </div>
     </section>
 
-    <!-- TRUST & NUMBERS SECTION (Counter Animations) -->
-    <section class="py-12 bg-charcoal-light border-y border-white/5 relative">
+    <!-- TRUST STATS SECTION -->
+    <section class="py-12 bg-white border-y border-brand-border">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                 <!-- Stat 1 -->
-                <div class="space-y-2 reveal zoom-in">
-                    <div class="w-12 h-12 bg-gold/10 text-gold rounded-full flex items-center justify-center mx-auto text-xl mb-3">
+                <div class="space-y-1.5 reveal active">
+                    <div class="w-12 h-12 bg-brand-gold/10 text-brand-accent rounded-2xl flex items-center justify-center mx-auto text-xl mb-2">
                         <i class="fa-solid fa-calendar-check"></i>
                     </div>
-                    <div class="text-3xl sm:text-4xl font-extrabold text-white font-mono flex items-center justify-center space-x-1 space-x-reverse">
-                        <span>+</span><span class="counter" data-target="15">0</span>
-                    </div>
-                    <p class="text-xs sm:text-sm text-gray-400 font-bold">عاماً من الخبرة بالرياض</p>
+                    <div class="text-3xl sm:text-4xl font-black text-brand-dark font-mono">+15</div>
+                    <p class="text-xs sm:text-sm text-brand-muted font-bold">عاماً من الخبرة والعمل بالرياض</p>
                 </div>
                 <!-- Stat 2 -->
-                <div class="space-y-2 reveal zoom-in" style="transition-delay: 100ms;">
-                    <div class="w-12 h-12 bg-gold/10 text-gold rounded-full flex items-center justify-center mx-auto text-xl mb-3">
+                <div class="space-y-1.5 reveal active">
+                    <div class="w-12 h-12 bg-brand-gold/10 text-brand-accent rounded-2xl flex items-center justify-center mx-auto text-xl mb-2">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
-                    <div class="text-3xl sm:text-4xl font-extrabold text-white font-mono flex items-center justify-center space-x-1 space-x-reverse">
-                        <span>+</span><span class="counter" data-target="1200">0</span>
-                    </div>
-                    <p class="text-xs sm:text-sm text-gray-400 font-bold">مشروع منجز بنجاح</p>
+                    <div class="text-3xl sm:text-4xl font-black text-brand-dark font-mono">+1200</div>
+                    <p class="text-xs sm:text-sm text-brand-muted font-bold">مشروع تركيب ناجح بالكامل</p>
                 </div>
                 <!-- Stat 3 -->
-                <div class="space-y-2 reveal zoom-in" style="transition-delay: 200ms;">
-                    <div class="w-12 h-12 bg-gold/10 text-gold rounded-full flex items-center justify-center mx-auto text-xl mb-3">
+                <div class="space-y-1.5 reveal active">
+                    <div class="w-12 h-12 bg-brand-gold/10 text-brand-accent rounded-2xl flex items-center justify-center mx-auto text-xl mb-2">
                         <i class="fa-solid fa-clock"></i>
                     </div>
-                    <div class="text-3xl sm:text-4xl font-extrabold text-white font-mono flex items-center justify-center space-x-1 space-x-reverse">
-                        <span class="counter" data-target="100">0</span><span>%</span>
-                    </div>
-                    <p class="text-xs sm:text-sm text-gray-400 font-bold">التزام بالمواعيد والوقت</p>
+                    <div class="text-3xl sm:text-4xl font-black text-brand-dark font-mono">100%</div>
+                    <p class="text-xs sm:text-sm text-brand-muted font-bold">التزام كامل بالجدول الزمني</p>
                 </div>
                 <!-- Stat 4 -->
-                <div class="space-y-2 reveal zoom-in" style="transition-delay: 300ms;">
-                    <div class="w-12 h-12 bg-gold/10 text-gold rounded-full flex items-center justify-center mx-auto text-xl mb-3">
+                <div class="space-y-1.5 reveal active">
+                    <div class="w-12 h-12 bg-brand-gold/10 text-brand-accent rounded-2xl flex items-center justify-center mx-auto text-xl mb-2">
                         <i class="fa-solid fa-heart"></i>
                     </div>
-                    <div class="text-3xl sm:text-4xl font-extrabold text-white font-mono flex items-center justify-center space-x-1 space-x-reverse">
-                        <span class="counter" data-target="98">0</span><span>%</span>
-                    </div>
-                    <p class="text-xs sm:text-sm text-gray-400 font-bold">نسبة رضا العملاء الكرام</p>
+                    <div class="text-3xl sm:text-4xl font-black text-brand-dark font-mono">98%</div>
+                    <p class="text-xs sm:text-sm text-brand-muted font-bold">تقييم رضا العملاء في الرياض</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SERVICES SECTION -->
-    <section id="services" class="py-20 bg-charcoal relative">
+    <!-- PREMIUM SERVICES SECTION -->
+    <section id="services" class="py-20 bg-brand-bg relative">
         <div class="container mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <span class="text-gold text-sm font-bold tracking-wider uppercase bg-gold/10 border border-gold/20 px-4 py-1.5 rounded-full">خدماتنا الاحترافية</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white">ماذا نقدم لعملائنا في الرياض؟</h2>
-                <p class="text-gray-400">نوفر باقة متكاملة من خدمات تركيب البلاط والسيراميك والبورسلان بدقة متناهية وأحدث تقنيات التشطيب المعمارية.</p>
+                <span class="text-brand-accent text-sm font-extrabold tracking-wider bg-brand-gold/20 border border-brand-gold/40 px-4 py-1.5 rounded-full">خدمات تشطيب السيراميك والبورسلان</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-dark">ما نقدمه لعملائنا في الرياض من حلول احترافية</h2>
+                <p class="text-brand-muted font-medium">نجمع بين جمال المظهر ودقة التركيب الهندسية باستخدام أفضل الخامات والمعدات الحديثة.</p>
             </div>
 
-            <!-- Services Grid - 10 cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-                <!-- Card 1 -->
-                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between reveal fade-up">
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="premium-card p-8 rounded-3xl flex flex-col justify-between reveal active">
                     <div class="space-y-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-gold to-gold-dark text-charcoal rounded-xl flex items-center justify-center text-2xl shadow-lg">
+                        <div class="w-14 h-14 bg-brand-gold/20 text-brand-accent rounded-2xl flex items-center justify-center text-2xl shadow-sm">
                             <i class="fa-solid fa-border-all"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-white">تركيب سيراميك أرضيات</h3>
-                        <p class="text-sm text-gray-400 leading-relaxed">تركيب بلاط الأرضيات للغرف والمجالس والصالات الكبيرة بمستويات استواء تامة ومقاومة للضغط والخدوش.</p>
+                        <h3 class="text-xl font-bold text-brand-dark">تركيب بورسلان المساحات الكبيرة</h3>
+                        <p class="text-sm text-brand-muted leading-relaxed font-medium">
+                            متخصصون بتركيب البورسلان للمقاسات الكبيرة (الهندي والإسباني) بأفخم التصاميم للأرضيات والصالات المفتوحة مع مراعاة الغراء المخصص المانع للهبوط.
+                        </p>
                     </div>
-                    <div class="pt-6 border-t border-white/5 mt-4">
-                        <a href="tel:0506218313" class="text-gold text-xs font-bold flex items-center hover:underline">
-                            طلب الخدمة الآن <i class="fa-solid fa-chevron-left mr-1.5 text-[10px]"></i>
+                    <div class="pt-6 border-t border-brand-border mt-6">
+                        <a href="tel:0506218313" class="text-brand-accent text-sm font-bold flex items-center gap-1.5 hover:underline">
+                            طلب معاينة الخدمة <i class="fa-solid fa-chevron-left text-[10px]"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between reveal fade-up" style="transition-delay: 100ms;">
+                <!-- Service Card 2 -->
+                <div class="premium-card p-8 rounded-3xl flex flex-col justify-between reveal active">
                     <div class="space-y-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-gold to-gold-dark text-charcoal rounded-xl flex items-center justify-center text-2xl shadow-lg">
-                            <i class="fa-solid fa-columns"></i>
+                        <div class="w-14 h-14 bg-brand-gold/20 text-brand-accent rounded-2xl flex items-center justify-center text-2xl shadow-sm">
+                            <i class="fa-solid fa-cubes"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-white">تركيب سيراميك جدران</h3>
-                        <p class="text-sm text-gray-400 leading-relaxed">تلبيس جدران الحمامات والمطابخ والواجهات بالسيراميك مع دمج الترويبة المقاومة للرطوبة وتوزيع ديكوري ممتاز.</p>
+                        <h3 class="text-xl font-bold text-brand-dark">تركيب سيراميك جدران وحوائط</h3>
+                        <p class="text-sm text-brand-muted leading-relaxed font-medium">
+                            تركيب وتلبيس سيراميك جدران المطابخ والحمامات بدقة متناهية مع دمج الترويبات المضادة للرطوبة وتوزيع هندسي متناظر للبلاطات دون بروز.
+                        </p>
                     </div>
-                    <div class="pt-6 border-t border-white/5 mt-4">
-                        <a href="tel:0590409465" class="text-gold text-xs font-bold flex items-center hover:underline">
-                            طلب الخدمة الآن <i class="fa-solid fa-chevron-left mr-1.5 text-[10px]"></i>
+                    <div class="pt-6 border-t border-brand-border mt-6">
+                        <a href="tel:0590409465" class="text-brand-accent text-sm font-bold flex items-center gap-1.5 hover:underline">
+                            طلب معاينة الخدمة <i class="fa-solid fa-chevron-left text-[10px]"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between reveal fade-up" style="transition-delay: 200ms;">
+                <!-- Service Card 3 -->
+                <div class="premium-card p-8 rounded-3xl flex flex-col justify-between reveal active">
                     <div class="space-y-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-gold to-gold-dark text-charcoal rounded-xl flex items-center justify-center text-2xl shadow-lg">
-                            <i class="fa-solid fa-gem"></i>
+                        <div class="w-14 h-14 bg-brand-gold/20 text-brand-accent rounded-2xl flex items-center justify-center text-2xl shadow-sm">
+                            <i class="fa-solid fa-compass-drafting"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-white">تركيب بورسلان فاخر</h3>
-                        <p class="text-sm text-gray-400 leading-relaxed">تركيب بورسلان الصالات والفلل باستخدام الغراء الخاص لضمان التماسك وعدم انفصال البلاط مستقبلاً.</p>
+                        <h3 class="text-xl font-bold text-brand-dark">قص وتفصيل البورسلان بدقة 45°</h3>
+                        <p class="text-sm text-brand-muted leading-relaxed font-medium">
+                            أعمال شطف وقص البلاط بزاوية 45 درجة (شطف استيل أو ألومنيوم) لإنشاء حواف حمامات ومطابخ مثالية ومستوية تظهر كأنها قطعة رخام واحدة.
+                        </p>
                     </div>
-                    <div class="pt-6 border-t border-white/5 mt-4">
-                        <a href="tel:0506218313" class="text-gold text-xs font-bold flex items-center hover:underline">
-                            طلب الخدمة الآن <i class="fa-solid fa-chevron-left mr-1.5 text-[10px]"></i>
+                    <div class="pt-6 border-t border-brand-border mt-6">
+                        <a href="tel:0506218313" class="text-brand-accent text-sm font-bold flex items-center gap-1.5 hover:underline">
+                            طلب معاينة الخدمة <i class="fa-solid fa-chevron-left text-[10px]"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Card 4 -->
-                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between reveal fade-up" style="transition-delay: 300ms;">
+                <!-- Service Card 4 -->
+                <div class="premium-card p-8 rounded-3xl flex flex-col justify-between reveal active">
                     <div class="space-y-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-gold to-gold-dark text-charcoal rounded-xl flex items-center justify-center text-2xl shadow-lg">
-                            <i class="fa-solid fa-scissors"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white">قص وتفصيل البورسلان</h3>
-                        <p class="text-sm text-gray-400 leading-relaxed">قص وتفصيل بورسلان الأحجام الكبيرة بمهارة بالغة وعمل زوايا شطف 45 درجة بدقة متناهية وبدون بروز.</p>
-                    </div>
-                    <div class="pt-6 border-t border-white/5 mt-4">
-                        <a href="tel:0590409465" class="text-gold text-xs font-bold flex items-center hover:underline">
-                            طلب الخدمة الآن <i class="fa-solid fa-chevron-left mr-1.5 text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between reveal fade-up" style="transition-delay: 400ms;">
-                    <div class="space-y-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-gold to-gold-dark text-charcoal rounded-xl flex items-center justify-center text-2xl shadow-lg">
+                        <div class="w-14 h-14 bg-brand-gold/20 text-brand-accent rounded-2xl flex items-center justify-center text-2xl shadow-sm">
                             <i class="fa-solid fa-hammer"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-white">ترميم البلاط التالف</h3>
-                        <p class="text-sm text-gray-400 leading-relaxed">إزالة واستبدال البلاط المكسور أو المنتفخ نتيجة عيوب التركيب القديمة دون إلحاق أي ضرر بالبلاط المجاور.</p>
+                        <h3 class="text-xl font-bold text-brand-dark">ترميم وتجديد الأرضيات التالفة</h3>
+                        <p class="text-sm text-brand-muted leading-relaxed font-medium">
+                            معالجة وإزالة البلاط القديم أو المنتفخ نتيجة عيوب التركيب السابقة، مع تسوية الخرسانة والتجهيز المثالي قبل إعادة التبليط لضمان ثبات تام.
+                        </p>
                     </div>
-                    <div class="pt-6 border-t border-white/5 mt-4">
-                        <a href="tel:0506218313" class="text-gold text-xs font-bold flex items-center hover:underline">
-                            طلب الخدمة الآن <i class="fa-solid fa-chevron-left mr-1.5 text-[10px]"></i>
+                    <div class="pt-6 border-t border-brand-border mt-6">
+                        <a href="tel:0590409465" class="text-brand-accent text-sm font-bold flex items-center gap-1.5 hover:underline">
+                            طلب معاينة الخدمة <i class="fa-solid fa-chevron-left text-[10px]"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Card 6 -->
-                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between reveal fade-up">
+                <!-- Service Card 5 -->
+                <div class="premium-card p-8 rounded-3xl flex flex-col justify-between reveal active">
                     <div class="space-y-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-gold to-gold-dark text-charcoal rounded-xl flex items-center justify-center text-2xl shadow-lg">
-                            <i class="fa-solid fa-sink"></i>
+                        <div class="w-14 h-14 bg-brand-gold/20 text-brand-accent rounded-2xl flex items-center justify-center text-2xl shadow-sm">
+                            <i class="fa-solid fa-shield-halved"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-white">إعادة تأهيل المطابخ والحمامات</h3>
-                        <p class="text-sm text-gray-400 leading-relaxed">تجديد كامل لأرضيات وجدران المطابخ والحمامات القديمة مع عمل عوازل مائية وحماية متكاملة ضد تسريب المياه.</p>
+                        <h3 class="text-xl font-bold text-brand-dark">عزل وتجهيز حمامات ومطابخ</h3>
+                        <p class="text-sm text-brand-muted leading-relaxed font-medium">
+                            تطبيق العزل المائي الكيميائي والبيتومين قبل البدء بأعمال البلاط لضمان عدم تسريب المياه مستقبلاً وحماية خرسانة الأسقف والجدران تماماً.
+                        </p>
                     </div>
-                    <div class="pt-6 border-t border-white/5 mt-4">
-                        <a href="tel:0590409465" class="text-gold text-xs font-bold flex items-center hover:underline">
-                            طلب الخدمة الآن <i class="fa-solid fa-chevron-left mr-1.5 text-[10px]"></i>
+                    <div class="pt-6 border-t border-brand-border mt-6">
+                        <a href="tel:0506218313" class="text-brand-accent text-sm font-bold flex items-center gap-1.5 hover:underline">
+                            طلب معاينة الخدمة <i class="fa-solid fa-chevron-left text-[10px]"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Card 7 -->
-                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between reveal fade-up" style="transition-delay: 100ms;">
+                <!-- Service Card 6 -->
+                <div class="premium-card p-8 rounded-3xl flex flex-col justify-between reveal active">
                     <div class="space-y-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-gold to-gold-dark text-charcoal rounded-xl flex items-center justify-center text-2xl shadow-lg">
-                            <i class="fa-solid fa-building"></i>
+                        <div class="w-14 h-14 bg-gradient-to-br from-brand-gold to-brand-accent text-white rounded-2xl flex items-center justify-center text-2xl shadow-sm">
+                            <i class="fa-solid fa-hotel"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-white">تشطيب فلل</h3>
-                        <p class="text-sm text-gray-400 leading-relaxed">مشاريع تشطيب الفلل والقصور السكنية بالكامل، تركيب الدرج والفرش الداخلي والخارجي بتصاميم هندسية فاخرة.</p>
+                        <h3 class="text-xl font-bold text-brand-dark">تشطيب الفلل والمشاريع بالكامل</h3>
+                        <p class="text-sm text-brand-muted leading-relaxed font-medium">
+                            تولي كامل أعمال تبليط الفلل والعمائر والشقق (أرضيات، درج، واجهات، حوش) مع إشراف هندسي وتنظيم متكامل للمراحل بدقة متناهية.
+                        </p>
                     </div>
-                    <div class="pt-6 border-t border-white/5 mt-4">
-                        <a href="tel:0506218313" class="text-gold text-xs font-bold flex items-center hover:underline">
-                            طلب الخدمة الآن <i class="fa-solid fa-chevron-left mr-1.5 text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between reveal fade-up" style="transition-delay: 200ms;">
-                    <div class="space-y-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-gold to-gold-dark text-charcoal rounded-xl flex items-center justify-center text-2xl shadow-lg">
-                            <i class="fa-solid fa-door-open"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white">تشطيب شقق</h3>
-                        <p class="text-sm text-gray-400 leading-relaxed">تركيب السيراميك والبورسلان للشقق السكنية الجديدة والمستعملة مع مراعاة سرعة الإنجاز لتسليم العمل في الموعد المحدد.</p>
-                    </div>
-                    <div class="pt-6 border-t border-white/5 mt-4">
-                        <a href="tel:0590409465" class="text-gold text-xs font-bold flex items-center hover:underline">
-                            طلب الخدمة الآن <i class="fa-solid fa-chevron-left mr-1.5 text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 9 -->
-                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between reveal fade-up" style="transition-delay: 300ms;">
-                    <div class="space-y-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-gold to-gold-dark text-charcoal rounded-xl flex items-center justify-center text-2xl shadow-lg">
-                            <i class="fa-solid fa-umbrella-beach"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white">تشطيب استراحات</h3>
-                        <p class="text-sm text-gray-400 leading-relaxed">أعمال بلاط الاستراحات والشاليهات والمجالس الخارجية والساحات باستخدام خامات تتحمل تقلبات الطقس والحرارة.</p>
-                    </div>
-                    <div class="pt-6 border-t border-white/5 mt-4">
-                        <a href="tel:0506218313" class="text-gold text-xs font-bold flex items-center hover:underline">
-                            طلب الخدمة الآن <i class="fa-solid fa-chevron-left mr-1.5 text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 10 -->
-                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between reveal fade-up" style="transition-delay: 400ms;">
-                    <div class="space-y-4">
-                        <div class="w-14 h-14 bg-gradient-to-br from-gold to-gold-dark text-charcoal rounded-xl flex items-center justify-center text-2xl shadow-lg">
-                            <i class="fa-solid fa-triangle-exclamation"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white">معالجة مشاكل التركيب</h3>
-                        <p class="text-sm text-gray-400 leading-relaxed">حلول نهائية لمشاكل التقشر، أو عدم استواء الفواصل، وتعبئة الفراغات تحت البلاط لحمايتها من الكسر تحت الأحمال.</p>
-                    </div>
-                    <div class="pt-6 border-t border-white/5 mt-4">
-                        <a href="tel:0590409465" class="text-gold text-xs font-bold flex items-center hover:underline">
-                            طلب الخدمة الآن <i class="fa-solid fa-chevron-left mr-1.5 text-[10px]"></i>
+                    <div class="pt-6 border-t border-brand-border mt-6">
+                        <a href="tel:0590409465" class="text-brand-accent text-sm font-bold flex items-center gap-1.5 hover:underline">
+                            طلب معاينة الخدمة <i class="fa-solid fa-chevron-left text-[10px]"></i>
                         </a>
                     </div>
                 </div>
@@ -727,170 +573,146 @@
         </div>
     </section>
 
-    <!-- WHY CHOOSE US SECTION -->
-    <section id="why-us" class="py-20 bg-charcoal-light relative">
-        <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <!-- Image Info -->
-            <div class="lg:col-span-5 relative order-2 lg:order-1 reveal fade-right">
-                <div class="absolute -top-4 -right-4 w-full h-full border-2 border-gold rounded-2xl pointer-events-none z-0"></div>
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="دقة في تركيب السيراميك" class="relative z-10 w-full h-[450px] object-cover rounded-2xl shadow-2xl">
-                <!-- Overlay trust box -->
-                <div class="absolute bottom-6 right-6 left-6 z-20 bg-charcoal/90 border border-gold/30 p-4 rounded-xl backdrop-blur-md flex items-center justify-between">
-                    <div>
-                        <p class="text-xs text-gray-400">ثقة وضمان</p>
-                        <p class="text-base font-bold text-white">كادر فني ذو كفاءة استثنائية</p>
-                    </div>
-                    <div class="text-gold text-3xl font-black">100%</div>
-                </div>
-            </div>
-
-            <!-- Features Info -->
-            <div class="lg:col-span-7 space-y-6 order-1 lg:order-2 text-right reveal fade-left">
-                <span class="text-gold text-sm font-bold tracking-wider bg-gold/10 border border-gold/20 px-4 py-1.5 rounded-full">مميزاتنا التنافسية</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white leading-tight">لماذا يعتمد ملاك العقارات والفلل في الرياض علينا؟</h2>
-                <p class="text-gray-300">نلتزم بتقديم معايير هندسية صارمة وجودة إتقان تليق بتطلعات عملائنا الكرام بالرياض.</p>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
-                    <!-- Feature 1 -->
-                    <div class="flex items-start space-x-3 space-x-reverse">
-                        <div class="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center text-gold mt-1">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-white">دقة عالية في التنفيذ</h4>
-                            <p class="text-sm text-gray-400">استخدام الليزر ومؤشرات قياس هندسية دقيقة لضبط الفواصل والاستواء.</p>
-                        </div>
-                    </div>
-                    <!-- Feature 2 -->
-                    <div class="flex items-start space-x-3 space-x-reverse">
-                        <div class="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center text-gold mt-1">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-white">التزام تام بالمواعيد</h4>
-                            <p class="text-sm text-gray-400">نلتزم بإنهاء العمل في الموعد المحدد دون أي تأخير أو مماطلة.</p>
-                        </div>
-                    </div>
-                    <!-- Feature 3 -->
-                    <div class="flex items-start space-x-3 space-x-reverse">
-                        <div class="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center text-gold mt-1">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-white">أسعار منافسة وعادلة</h4>
-                            <p class="text-sm text-gray-400">مقايسات دقيقة وخيارات ميزانية متنوعة تناسب احتياجكم ومساحتكم.</p>
-                        </div>
-                    </div>
-                    <!-- Feature 4 -->
-                    <div class="flex items-start space-x-3 space-x-reverse">
-                        <div class="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center text-gold mt-1">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-white">تشطيب احترافي راقٍ</h4>
-                            <p class="text-sm text-gray-400">نعمل على إعطائكم لمسة جمالية وفنية ترفع من قيمة عقاركم السكني.</p>
-                        </div>
-                    </div>
-                    <!-- Feature 5 -->
-                    <div class="flex items-start space-x-3 space-x-reverse">
-                        <div class="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center text-gold mt-1">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-white">خبرة تتجاوز 15 عاماً</h4>
-                            <p class="text-sm text-gray-400">كادر مدرب وخبرة عريضة في التعامل مع شتى أنواع السيراميك والبورسلان.</p>
-                        </div>
-                    </div>
-                    <!-- Feature 6 -->
-                    <div class="flex items-start space-x-3 space-x-reverse">
-                        <div class="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center text-gold mt-1">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-white">أدوات حديثة لقص البلاط</h4>
-                            <p class="text-sm text-gray-400">نستعين بماكينات قص كهربائية ومعدات شفط متطورة تمنع كسر الزوايا.</p>
-                        </div>
-                    </div>
-                    <!-- Feature 7 -->
-                    <div class="flex items-start space-x-3 space-x-reverse">
-                        <div class="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center text-gold mt-1">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-white">نظافة دائمة أثناء العمل</h4>
-                            <p class="text-sm text-gray-400">نقوم بتنظيف ورفع المخلفات وبقايا البلاط والغراء أولاً بأول بشكل دوري.</p>
-                        </div>
-                    </div>
-                    <!-- Feature 8 -->
-                    <div class="flex items-start space-x-3 space-x-reverse">
-                        <div class="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center text-gold mt-1">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-white">ضمان حقيقي وموثق</h4>
-                            <p class="text-sm text-gray-400">نوفر ضماناً على ثبات البلاط وعدم تحركه أو انفصاله لفترات طويلة.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BEFORE/AFTER SHOWCASE & PROJECT GALLERY -->
-    <section id="gallery" class="py-20 bg-charcoal relative">
+    <!-- BEFORE / AFTER INTERACTIVE PRESENTATION -->
+    <section class="py-20 bg-white relative">
         <div class="container mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <span class="text-gold text-sm font-bold tracking-wider bg-gold/10 border border-gold/20 px-4 py-1.5 rounded-full">سجل أعمالنا الفاخرة</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white">معرض مقارنة الأعمال (قبل وبعد التنفيذ)</h2>
-                <p class="text-gray-400">اسحب الشريط المنزلق لرؤية جودة التشطيب والفرق الشاسع في ترتيب المساحات وسحر البورسلان اللامع.</p>
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+                <span class="text-brand-accent text-sm font-extrabold tracking-wider bg-brand-gold/20 border border-brand-gold/40 px-4 py-1.5 rounded-full">شاهد الإتقان قبل وبعد التركيب</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-dark">الفارق الهندسي في دقة تسوية البلاط</h2>
+                <p class="text-brand-muted font-medium">قم بتحريك الشريط المنزلق في منتصف الصورة لتشاهد جودة التشطيب بالبورسلان مقارنة بالبلاط القديم التالف.</p>
             </div>
 
-            <!-- Before/After Interactive Slider -->
-            <div class="max-w-4xl mx-auto mb-16 reveal zoom-in">
-                <div class="slider-container shadow-2xl">
+            <!-- Interactive Slider Box -->
+            <div class="max-w-4xl mx-auto reveal active">
+                <div class="slider-container">
+                    <!-- Before Image Wrapper -->
                     <div class="image-before"></div>
+                    <!-- After Image Wrapper -->
                     <div class="image-after" id="after-image"></div>
+                    <!-- Input Range Slider for dragging -->
                     <input type="range" min="0" max="100" value="50" class="slider-range" id="slider-range" oninput="slideBeforeAfter(this.value)">
+                    <!-- Slider Handle bar -->
                     <div class="slider-handle" id="slider-handle">
                         <div class="slider-button">
-                            <i class="fa-solid fa-arrows-left-right"></i>
+                            <i class="fa-solid fa-arrows-left-right text-xs"></i>
                         </div>
                     </div>
                     <!-- Labels -->
-                    <span class="absolute right-4 bottom-4 bg-charcoal/80 border border-white/10 text-white px-3 py-1 rounded-md text-xs font-bold">قبل التنفيذ (تالف ومتهالك)</span>
-                    <span class="absolute left-4 bottom-4 bg-gold/90 text-charcoal px-3 py-1 rounded-md text-xs font-black">بعد التنفيذ (بورسلان فاخر مستوٍ)</span>
+                    <span class="absolute right-4 bottom-4 bg-brand-dark/85 text-white border border-stone-700 px-3.5 py-1.5 rounded-xl text-xs font-bold pointer-events-none">قبل التنفيذ (بلاط تالف ومستهلك)</span>
+                    <span class="absolute left-4 bottom-4 bg-brand-accent text-white px-3.5 py-1.5 rounded-xl text-xs font-black pointer-events-none">بعد التنفيذ (بورسلان فاخر مستوٍ تماماً)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REAL PROJECT GALLERY (ACTUAL USER IMAGES) -->
+    <section id="gallery" class="py-20 bg-brand-bg relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-brand-accent text-sm font-extrabold tracking-wider bg-brand-gold/20 border border-brand-gold/40 px-4 py-1.5 rounded-full">معرض أعمالنا بالرياض</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-dark">شاهد صور حقيقية من مواقع ومشاريع عملائنا</h2>
+                <p class="text-brand-muted font-medium">أعمال تنفيذ حية تظهر دقة الفواصل واستواء الأرضيات والجدران بأعلى معايير الإتقان.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Photo 1 -->
+                <div class="premium-card overflow-hidden rounded-3xl group relative shadow-md reveal active">
+                    <img src="images/1.jpg" alt="تركيب بلاط أرضيات فلل الرياض" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div class="text-right">
+                            <span class="text-brand-gold text-xs font-bold">حي الملقا - شمال الرياض</span>
+                            <h4 class="text-white text-lg font-black mt-1">تركيب بورسلان أرضيات صالات مفتوحة</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="premium-card overflow-hidden rounded-3xl group relative shadow-md reveal active">
+                    <img src="images/4.jpg" alt="سيراميك مطابخ مودرن الرياض" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div class="text-right">
+                            <span class="text-brand-gold text-xs font-bold">حي الياسمين - شمال الرياض</span>
+                            <h4 class="text-white text-lg font-black mt-1">قص وتفصيل حوائط وجدران مطابخ فاخرة</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="premium-card overflow-hidden rounded-3xl group relative shadow-md reveal active">
+                    <img src="images/5.jpg" alt="دقة تشطيب السيراميك بالليزر الرياض" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div class="text-right">
+                            <span class="text-brand-gold text-xs font-bold">حي حطين - الرياض</span>
+                            <h4 class="text-white text-lg font-black mt-1">تركيب وتثبيت بلاط واجهات فلل وقصور</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US SECTION -->
+    <section id="why-us" class="py-20 bg-white relative">
+        <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Side Image -->
+            <div class="lg:col-span-5 relative reveal active">
+                <div class="absolute -top-4 -right-4 w-full h-full border border-brand-gold rounded-3xl pointer-events-none"></div>
+                <img src="images/5.jpg" alt="إشراف فني على تركيب البلاط بالرياض" class="relative z-10 w-full h-[450px] object-cover rounded-3xl shadow-xl">
+                <!-- Badge Overlay -->
+                <div class="absolute bottom-6 right-6 left-6 z-20 bg-brand-bg/95 border border-brand-gold/30 p-5 rounded-2xl backdrop-blur-md flex items-center justify-between shadow-lg">
+                    <div>
+                        <p class="text-xs text-brand-muted font-bold">معلم سيراميك معتمد</p>
+                        <p class="text-base font-black text-brand-dark mt-1">كفاءة هندسية 100%</p>
+                    </div>
+                    <div class="text-brand-accent text-3xl font-black">15+ عاماً</div>
                 </div>
             </div>
 
-            <!-- masonry grid gallery of work -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <!-- Gallery 1 -->
-                <div class="relative group overflow-hidden rounded-2xl border border-white/10 reveal fade-up">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="تركيب بورسلان مطابخ فاخرة" class="w-full h-80 object-cover group-hover:scale-115 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+            <!-- Right Side Features -->
+            <div class="lg:col-span-7 space-y-6 text-right reveal active">
+                <span class="text-brand-accent text-sm font-extrabold tracking-wider bg-brand-gold/20 border border-brand-gold/40 px-4 py-1.5 rounded-full">لماذا تختارنا؟</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-dark leading-tight">معايير عمل هندسية صارمة وجودة إتقان تليق بكم</h2>
+                <p class="text-brand-muted font-medium">نهتم بأدق التفاصيل والزوايا لنقدم لك لوحة فنية مميزة تدوم لسنوات طوال دون أي تقشر أو كسر.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                    <!-- Feature 1 -->
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 bg-brand-gold/20 flex items-center justify-center text-amber-800 shrink-0 mt-1">
+                            <i class="fa-solid fa-check text-sm"></i>
+                        </div>
                         <div>
-                            <span class="text-gold text-xs font-bold uppercase tracking-wider">مطبخ فيلا بالياسمين</span>
-                            <h4 class="text-base font-bold text-white">تركيب بورسلان أرضيات وجدران مطبخ مودرن</h4>
+                            <h4 class="font-bold text-brand-dark">ضبط الاستواء بالليزر</h4>
+                            <p class="text-xs text-brand-muted mt-1 leading-relaxed">استخدام موازين ليزر حديثة لمطابقة استواء الفواصل والأسطح بنسبة 100%.</p>
                         </div>
                     </div>
-                </div>
-                <!-- Gallery 2 -->
-                <div class="relative group overflow-hidden rounded-2xl border border-white/10 reveal fade-up" style="transition-delay: 100ms;">
-                    <img src="https://images.unsplash.com/photo-1502005229762-fc1b2381f083?auto=format&fit=crop&w=600&q=80" alt="سيراميك حمامات بالرياض" class="w-full h-80 object-cover group-hover:scale-115 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <!-- Feature 2 -->
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 bg-brand-gold/20 flex items-center justify-center text-amber-800 shrink-0 mt-1">
+                            <i class="fa-solid fa-check text-sm"></i>
+                        </div>
                         <div>
-                            <span class="text-gold text-xs font-bold uppercase tracking-wider">حمام فيلا بالملقا</span>
-                            <h4 class="text-base font-bold text-white">تشطيب سيراميك جدران رخامي مع قص زوايا</h4>
+                            <h4 class="font-bold text-brand-dark">الالتزام التام بالمواعيد</h4>
+                            <p class="text-xs text-brand-muted mt-1 leading-relaxed">نبدأ العمل وننهيه في الميعاد المحدد بدقة متناهية دون أي تأخير.</p>
                         </div>
                     </div>
-                </div>
-                <!-- Gallery 3 -->
-                <div class="relative group overflow-hidden rounded-2xl border border-white/10 reveal fade-up" style="transition-delay: 200ms;">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="بلاط صالات فلل الرياض" class="w-full h-80 object-cover group-hover:scale-115 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <!-- Feature 3 -->
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 bg-brand-gold/20 flex items-center justify-center text-amber-800 shrink-0 mt-1">
+                            <i class="fa-solid fa-check text-sm"></i>
+                        </div>
                         <div>
-                            <span class="text-gold text-xs font-bold uppercase tracking-wider">صالة استقبال بحطين</span>
-                            <h4 class="text-base font-bold text-white">تركيب بورسلان هندي كبير الحجم عالي اللمعان</h4>
+                            <h4 class="font-bold text-brand-dark">تفريغ هواء تحت البلاط</h4>
+                            <p class="text-xs text-brand-muted mt-1 leading-relaxed">نضمن تطبيق الغراء على كامل البلاطة لمنع تكون فراغات الهواء المسببة للكسر.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 bg-brand-gold/20 flex items-center justify-center text-amber-800 shrink-0 mt-1">
+                            <i class="fa-solid fa-check text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-brand-dark">تنظيف دوري ومستمر</h4>
+                            <p class="text-xs text-brand-muted mt-1 leading-relaxed">نقوم بتنظيف الموقع ورفع مخلفات البلاط والغراء أولاً بأول بشكل يومي.</p>
                         </div>
                     </div>
                 </div>
@@ -899,234 +721,127 @@
     </section>
 
     <!-- WORK PROCESS SECTION -->
-    <section class="py-20 bg-charcoal-light relative">
+    <section class="py-20 bg-brand-bg relative">
         <div class="container mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <span class="text-gold text-sm font-bold tracking-wider bg-gold/10 border border-gold/20 px-4 py-1.5 rounded-full">كيف نعمل؟</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white">خطوات تنفيذ المشاريع من البداية وحتى التسليم</h2>
-                <p class="text-gray-400">نسير وفق آلية عمل واضحة ومرتبة تضمن لعملائنا جودة الخدمة وراحة البال في كل مرحلة.</p>
+                <span class="text-brand-accent text-sm font-extrabold tracking-wider bg-brand-gold/20 border border-brand-gold/40 px-4 py-1.5 rounded-full">خطوات تنفيذ واضحة</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-dark">كيف نضمن جودة العمل من البداية وحتى التسليم؟</h2>
+                <p class="text-brand-muted font-medium">خطوات مرتبة تضمن لك راحة البال ومتابعة مستمرة لمراحل تشطيب السيراميك والبورسلان.</p>
             </div>
 
-            <!-- Steps Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8 relative z-10 text-center">
+            <!-- Steps wrapper -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10 text-center">
                 <!-- Step 1 -->
-                <div class="space-y-4 relative step-line reveal fade-up">
-                    <div class="w-16 h-16 bg-gradient-to-br from-gold to-gold-dark text-charcoal font-black rounded-full flex items-center justify-center text-xl mx-auto shadow-lg">
+                <div class="bg-brand-card border border-brand-border p-6 rounded-3xl relative reveal active">
+                    <div class="w-14 h-14 bg-gradient-to-br from-brand-gold to-brand-accent text-white font-black rounded-2xl flex items-center justify-center text-lg mx-auto shadow-md mb-4">
                         1
                     </div>
-                    <h3 class="text-lg font-bold text-white">تواصل معنا</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">اتصل بنا أو راسلنا على الواتساب لمناقشة طبيعة العمل.</p>
+                    <h3 class="text-lg font-bold text-brand-dark">المعاينة المجانية</h3>
+                    <p class="text-xs text-brand-muted mt-2 leading-relaxed">نزور موقعك في أي حي بالرياض لقياس المساحة وفحص الأرضيات بدقة مجاناً.</p>
                 </div>
                 <!-- Step 2 -->
-                <div class="space-y-4 relative step-line reveal fade-up" style="transition-delay: 100ms;">
-                    <div class="w-16 h-16 bg-gradient-to-br from-gold to-gold-dark text-charcoal font-black rounded-full flex items-center justify-center text-xl mx-auto shadow-lg">
+                <div class="bg-brand-card border border-brand-border p-6 rounded-3xl relative reveal active">
+                    <div class="w-14 h-14 bg-gradient-to-br from-brand-gold to-brand-accent text-white font-black rounded-2xl flex items-center justify-center text-lg mx-auto shadow-md mb-4">
                         2
                     </div>
-                    <h3 class="text-lg font-bold text-white">تحديد الموقع</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">تحديد عنوان عقارك في أي حي من أحياء الرياض.</p>
+                    <h3 class="text-lg font-bold text-brand-dark">تقديم المقايسة</h3>
+                    <p class="text-xs text-brand-muted mt-2 leading-relaxed">نقدم عرض سعر تفصيلي للمواد المطلوبة وطريقة التركيب الأنسب لميزانيتك.</p>
                 </div>
                 <!-- Step 3 -->
-                <div class="space-y-4 relative step-line reveal fade-up" style="transition-delay: 200ms;">
-                    <div class="w-16 h-16 bg-gradient-to-br from-gold to-gold-dark text-charcoal font-black rounded-full flex items-center justify-center text-xl mx-auto shadow-lg">
+                <div class="bg-brand-card border border-brand-border p-6 rounded-3xl relative reveal active">
+                    <div class="w-14 h-14 bg-gradient-to-br from-brand-gold to-brand-accent text-white font-black rounded-2xl flex items-center justify-center text-lg mx-auto shadow-md mb-4">
                         3
                     </div>
-                    <h3 class="text-lg font-bold text-white">معاينة العمل</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">زيارة الفني للموقع مجاناً لقياس المساحات والأرضية.</p>
+                    <h3 class="text-lg font-bold text-brand-dark">التنفيذ الهندسي</h3>
+                    <p class="text-xs text-brand-muted mt-2 leading-relaxed">نبدأ العمل بأحدث موازين الليزر وماكينات قص البورسلان بدقة فائقة.</p>
                 </div>
                 <!-- Step 4 -->
-                <div class="space-y-4 relative step-line reveal fade-up" style="transition-delay: 300ms;">
-                    <div class="w-16 h-16 bg-gradient-to-br from-gold to-gold-dark text-charcoal font-black rounded-full flex items-center justify-center text-xl mx-auto shadow-lg">
+                <div class="bg-brand-card border border-brand-border p-6 rounded-3xl relative reveal active">
+                    <div class="w-14 h-14 bg-gradient-to-br from-brand-gold to-brand-accent text-white font-black rounded-2xl flex items-center justify-center text-lg mx-auto shadow-md mb-4">
                         4
                     </div>
-                    <h3 class="text-lg font-bold text-white">تقديم السعر</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">نقدم عرض سعر نهائي، واضح، وتفصيلي ومناسب لك.</p>
+                    <h3 class="text-lg font-bold text-brand-dark">التسليم والضمان</h3>
+                    <p class="text-xs text-brand-muted mt-2 leading-relaxed">تسليم الأرضيات نظيفة وخالية من العيوب مع تسليم شهادة الضمان الموثقة.</p>
                 </div>
-                <!-- Step 5 -->
-                <div class="space-y-4 relative step-line reveal fade-up" style="transition-delay: 400ms;">
-                    <div class="w-16 h-16 bg-gradient-to-br from-gold to-gold-dark text-charcoal font-black rounded-full flex items-center justify-center text-xl mx-auto shadow-lg">
-                        5
-                    </div>
-                    <h3 class="text-lg font-bold text-white">بدء التنفيذ</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">توريد المواد المطلوبة ومباشرة تركيب البلاط بدقة.</p>
-                </div>
-                <!-- Step 6 -->
-                <div class="space-y-4 reveal fade-up" style="transition-delay: 500ms;">
-                    <div class="w-16 h-16 bg-gradient-to-br from-gold to-gold-dark text-charcoal font-black rounded-full flex items-center justify-center text-xl mx-auto shadow-lg">
-                        6
-                    </div>
-                    <h3 class="text-lg font-bold text-white">تسليم العمل</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed">تنظيف الموقع وتسليم العمل مع إعطاء شهادة الضمان.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- COVERAGE AREAS SECTION -->
-    <section id="coverage" class="py-20 bg-charcoal relative">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <span class="text-gold text-sm font-bold tracking-wider bg-gold/10 border border-gold/20 px-4 py-1.5 rounded-full">نغطي كافة أحياء العاصمة</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white">أين تتوفر خدماتنا لتركيب السيراميك؟</h2>
-                <p class="text-gray-400">لدينا فرق عمل مجهزة ومستعدة للانتقال السريع إلى أي مكان في مدينة الرياض.</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- North Riyadh -->
-                <div class="bg-charcoal-light p-6 rounded-2xl border border-white/5 space-y-4 hover:border-gold/30 transition-colors duration-300 reveal fade-up">
-                    <div class="flex items-center space-x-2 space-x-reverse text-gold font-bold text-lg">
-                        <i class="fa-solid fa-map-pin"></i>
-                        <span>شمال الرياض</span>
-                    </div>
-                    <ul class="space-y-2 text-sm text-gray-300">
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي الياسمين</li>
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي الملقا</li>
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي النرجس</li>
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي الصحافة</li>
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي حطين</li>
-                    </ul>
-                </div>
-
-                <!-- East Riyadh -->
-                <div class="bg-charcoal-light p-6 rounded-2xl border border-white/5 space-y-4 hover:border-gold/30 transition-colors duration-300 reveal fade-up" style="transition-delay: 100ms;">
-                    <div class="flex items-center space-x-2 space-x-reverse text-gold font-bold text-lg">
-                        <i class="fa-solid fa-map-pin"></i>
-                        <span>شرق الرياض</span>
-                    </div>
-                    <ul class="space-y-2 text-sm text-gray-300">
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي اليرموك</li>
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي قرطبة</li>
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي الروضة</li>
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي النسيم</li>
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي النظيم</li>
-                    </ul>
-                </div>
-
-                <!-- West Riyadh -->
-                <div class="bg-charcoal-light p-6 rounded-2xl border border-white/5 space-y-4 hover:border-gold/30 transition-colors duration-300 reveal fade-up" style="transition-delay: 200ms;">
-                    <div class="flex items-center space-x-2 space-x-reverse text-gold font-bold text-lg">
-                        <i class="fa-solid fa-map-pin"></i>
-                        <span>غرب الرياض</span>
-                    </div>
-                    <ul class="space-y-2 text-sm text-gray-300">
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي ضاحية لبن</li>
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي نمار</li>
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي العزيزية</li>
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي السويدي</li>
-                    </ul>
-                </div>
-
-                <!-- South Riyadh -->
-                <div class="bg-charcoal-light p-6 rounded-2xl border border-white/5 space-y-4 hover:border-gold/30 transition-colors duration-300 reveal fade-up" style="transition-delay: 300ms;">
-                    <div class="flex items-center space-x-2 space-x-reverse text-gold font-bold text-lg">
-                        <i class="fa-solid fa-map-pin"></i>
-                        <span>جنوب الرياض</span>
-                    </div>
-                    <ul class="space-y-2 text-sm text-gray-300">
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي الشفا</li>
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي بدر</li>
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي الحزم</li>
-                        <li><i class="fa-solid fa-chevron-left text-[10px] text-gold ml-2"></i>حي الدار البيضاء</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Bottom Coverage Banner -->
-            <div class="mt-8 bg-gradient-to-r from-gold/10 via-gold/5 to-transparent border border-gold/20 p-6 rounded-2xl text-center reveal zoom-in">
-                <p class="text-gold font-bold text-lg">ونسعد بخدمة جميع الأحياء المجاورة والمحيطة بمدينة الرياض بلا استثناء.</p>
             </div>
         </div>
     </section>
 
     <!-- TESTIMONIALS SECTION -->
-    <section class="py-20 bg-charcoal-light relative">
+    <section class="py-20 bg-white relative">
         <div class="container mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <span class="text-gold text-sm font-bold tracking-wider bg-gold/10 border border-gold/20 px-4 py-1.5 rounded-full">آراء عملائنا الكرام</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white">ماذا يقول أهالي الرياض عن جودة خدماتنا؟</h2>
-                <p class="text-gray-400">تقييمات واقعية وموثقة من عملاء تشرفنا بتركيب السيراميك والبورسلان في منازلهم.</p>
+                <span class="text-brand-accent text-sm font-extrabold tracking-wider bg-brand-gold/20 border border-brand-gold/40 px-4 py-1.5 rounded-full">آراء عملائنا بالرياض</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-dark">تقييمات واقعية تشرفنا بها من أهالي العاصمة</h2>
+                <p class="text-brand-muted font-medium">نسعى دائماً لكسب ثقتكم الغالية بتقديم أفضل مستويات الإتقان والتعامل الراقي.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="bg-charcoal p-8 rounded-2xl border border-white/5 space-y-6 relative flex flex-col justify-between reveal fade-up">
-                    <div class="absolute -top-4 -right-4 w-8 h-8 bg-gold text-charcoal rounded-full flex items-center justify-center text-sm font-bold shadow-lg">
-                        <i class="fa-solid fa-quote-right"></i>
-                    </div>
+                <div class="bg-brand-bg border border-brand-border p-8 rounded-3xl relative flex flex-col justify-between reveal active">
                     <div class="space-y-4">
-                        <div class="flex items-center space-x-1 space-x-reverse text-gold">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                        <div class="flex items-center text-brand-accent">
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs mr-0.5"></i>
+                            <i class="fa-solid fa-star text-xs mr-0.5"></i>
+                            <i class="fa-solid fa-star text-xs mr-0.5"></i>
+                            <i class="fa-solid fa-star text-xs mr-0.5"></i>
                         </div>
-                        <p class="text-gray-300 text-sm leading-relaxed">
+                        <p class="text-brand-muted text-sm leading-relaxed font-semibold">
                             "تعاملت مع المعلم لتركيب بورسلان هندي كبير لفيلا جديدة بالملقا. بصراحة، دقة التركيب واستواء البورسلان لا يعلى عليه. الالتزام بالوقت كان دقيقاً جداً، وكان مهتماً بنظافة الموقع بعد انتهاء اليوم."
                         </p>
                     </div>
-                    <div class="pt-6 border-t border-white/5 flex items-center space-x-3 space-x-reverse">
-                        <div class="w-10 h-10 bg-gold/10 text-gold rounded-full flex items-center justify-center font-bold">
-                            أف
-                        </div>
+                    <div class="pt-6 border-t border-brand-border flex items-center gap-3 mt-6">
+                        <div class="w-10 h-10 bg-brand-gold/20 text-brand-accent rounded-full flex items-center justify-center font-black">أف</div>
                         <div>
-                            <h4 class="font-bold text-white text-sm">أبو فهد - حي الملقا</h4>
-                            <span class="text-xs text-gray-500">مالك فيلا سكنية</span>
+                            <h4 class="font-bold text-brand-dark text-sm">أبو فهد - حي الملقا</h4>
+                            <span class="text-xs text-brand-muted">مالك فيلا سكنية</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-charcoal p-8 rounded-2xl border border-white/5 space-y-6 relative flex flex-col justify-between reveal fade-up" style="transition-delay: 100ms;">
-                    <div class="absolute -top-4 -right-4 w-8 h-8 bg-gold text-charcoal rounded-full flex items-center justify-center text-sm font-bold shadow-lg">
-                        <i class="fa-solid fa-quote-right"></i>
-                    </div>
+                <div class="bg-brand-bg border border-brand-border p-8 rounded-3xl relative flex flex-col justify-between reveal active">
                     <div class="space-y-4">
-                        <div class="flex items-center space-x-1 space-x-reverse text-gold">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                        <div class="flex items-center text-brand-accent">
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs mr-0.5"></i>
+                            <i class="fa-solid fa-star text-xs mr-0.5"></i>
+                            <i class="fa-solid fa-star text-xs mr-0.5"></i>
+                            <i class="fa-solid fa-star text-xs mr-0.5"></i>
                         </div>
-                        <p class="text-gray-300 text-sm leading-relaxed">
+                        <p class="text-brand-muted text-sm leading-relaxed font-semibold">
                             "بصفتي مهندس ديكور، أتعامل مع الفني لتنفيذ مشاريع عملائي في الرياض. دقة زوايا الشطف 45 درجة وتفصيل البورسلان للجدران في الحمامات والمطابخ ممتازة وخالية من العيوب تماماً. أوصي به بشدة."
                         </p>
                     </div>
-                    <div class="pt-6 border-t border-white/5 flex items-center space-x-3 space-x-reverse">
-                        <div class="w-10 h-10 bg-gold/10 text-gold rounded-full flex items-center justify-center font-bold">
-                            مخ
-                        </div>
+                    <div class="pt-6 border-t border-brand-border flex items-center gap-3 mt-6">
+                        <div class="w-10 h-10 bg-brand-gold/20 text-brand-accent rounded-full flex items-center justify-center font-black">مخ</div>
                         <div>
-                            <h4 class="font-bold text-white text-sm">المهندس خالد - حي الياسمين</h4>
-                            <span class="text-xs text-gray-500">مهندس تصميم داخلي</span>
+                            <h4 class="font-bold text-brand-dark text-sm">المهندس خالد - حي الياسمين</h4>
+                            <span class="text-xs text-brand-muted">مهندس تصميم داخلي</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 3 -->
-                <div class="bg-charcoal p-8 rounded-2xl border border-white/5 space-y-6 relative flex flex-col justify-between reveal fade-up" style="transition-delay: 200ms;">
-                    <div class="absolute -top-4 -right-4 w-8 h-8 bg-gold text-charcoal rounded-full flex items-center justify-center text-sm font-bold shadow-lg">
-                        <i class="fa-solid fa-quote-right"></i>
-                    </div>
+                <div class="bg-brand-bg border border-brand-border p-8 rounded-3xl relative flex flex-col justify-between reveal active">
                     <div class="space-y-4">
-                        <div class="flex items-center space-x-1 space-x-reverse text-gold">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                        <div class="flex items-center text-brand-accent">
+                            <i class="fa-solid fa-star text-xs"></i>
+                            <i class="fa-solid fa-star text-xs mr-0.5"></i>
+                            <i class="fa-solid fa-star text-xs mr-0.5"></i>
+                            <i class="fa-solid fa-star text-xs mr-0.5"></i>
+                            <i class="fa-solid fa-star text-xs mr-0.5"></i>
                         </div>
-                        <p class="text-gray-300 text-sm leading-relaxed">
+                        <p class="text-brand-muted text-sm leading-relaxed font-semibold">
                             "كانت لدينا مشكلة انتفاخ وتكسر البلاط القديم في صالة البيت، وجاء الفني وفك البلاط التالف وركب السيراميك الجديد بدقة متناهية مع معالجة الرطوبة تحت البلاط. تعامل محترم وسعر منافس جداً."
                         </p>
                     </div>
-                    <div class="pt-6 border-t border-white/5 flex items-center space-x-3 space-x-reverse">
-                        <div class="w-10 h-10 bg-gold/10 text-gold rounded-full flex items-center justify-center font-bold">
-                            فع
-                        </div>
+                    <div class="pt-6 border-t border-brand-border flex items-center gap-3 mt-6">
+                        <div class="w-10 h-10 bg-brand-gold/20 text-brand-accent rounded-full flex items-center justify-center font-black">فع</div>
                         <div>
-                            <h4 class="font-bold text-white text-sm">فيصل العتيبي - حي السويدي</h4>
-                            <span class="text-xs text-gray-500">مشروع ترميم منزل</span>
+                            <h4 class="font-bold text-brand-dark text-sm">فيصل العتيبي - حي السويدي</h4>
+                            <span class="text-xs text-brand-muted">مشروع ترميم منزل</span>
                         </div>
                     </div>
                 </div>
@@ -1134,91 +849,154 @@
         </div>
     </section>
 
-    <!-- FAQ SECTION (Accordion style) -->
-    <section id="faq" class="py-20 bg-charcoal relative">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="text-center mb-16 space-y-4">
-                <span class="text-gold text-sm font-bold tracking-wider bg-gold/10 border border-gold/20 px-4 py-1.5 rounded-full">أسئلة شائعة</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-white">الأسئلة الشائعة حول خدمات تركيب البلاط</h2>
-                <p class="text-gray-400">إجابات كافية ووافية عن كافة الاستفسارات التي تدور في ذهن عملائنا بالرياض.</p>
+    <!-- NEIGHBORHOOD COVERAGE AREAS -->
+    <section id="coverage" class="py-20 bg-brand-bg relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-brand-accent text-sm font-extrabold tracking-wider bg-brand-gold/20 border border-brand-gold/40 px-4 py-1.5 rounded-full">نغطي كافة أنحاء العاصمة</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-dark">أين تتوفر خدماتنا لتركيب السيراميك؟</h2>
+                <p class="text-brand-muted font-medium">فرقنا الفنية مجهزة بالكامل ومستعدة للانتقال لزيارة موقعك مجاناً ورفع المقاسات.</p>
             </div>
 
-            <!-- Accordion Items -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- North Riyadh -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-brand-border space-y-4 hover:border-brand-accent transition-all duration-300 shadow-sm reveal active">
+                    <div class="flex items-center gap-2 text-brand-accent font-black text-lg">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>شمال الرياض</span>
+                    </div>
+                    <ul class="space-y-2.5 text-sm font-bold text-brand-muted">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي الياسمين</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي الملقا</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي النرجس</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي الصحافة</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي حطين</li>
+                    </ul>
+                </div>
+
+                <!-- East Riyadh -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-brand-border space-y-4 hover:border-brand-accent transition-all duration-300 shadow-sm reveal active">
+                    <div class="flex items-center gap-2 text-brand-accent font-black text-lg">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>شرق الرياض</span>
+                    </div>
+                    <ul class="space-y-2.5 text-sm font-bold text-brand-muted">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي اليرموك</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي قرطبة</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي الروضة</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي النسيم</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي النظيم</li>
+                    </ul>
+                </div>
+
+                <!-- West Riyadh -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-brand-border space-y-4 hover:border-brand-accent transition-all duration-300 shadow-sm reveal active">
+                    <div class="flex items-center gap-2 text-brand-accent font-black text-lg">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>غرب الرياض</span>
+                    </div>
+                    <ul class="space-y-2.5 text-sm font-bold text-brand-muted">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي ضاحية لبن</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي نمار</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي العزيزية</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي السويدي</li>
+                    </ul>
+                </div>
+
+                <!-- South Riyadh -->
+                <div class="bg-brand-card p-8 rounded-3xl border border-brand-border space-y-4 hover:border-brand-accent transition-all duration-300 shadow-sm reveal active">
+                    <div class="flex items-center gap-2 text-brand-accent font-black text-lg">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>جنوب الرياض</span>
+                    </div>
+                    <ul class="space-y-2.5 text-sm font-bold text-brand-muted">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي الشفا</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي بدر</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي الحزم</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-chevron-left text-[10px] text-brand-gold"></i> حي الدار البيضاء</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Banner footer -->
+            <div class="mt-8 bg-gradient-to-r from-brand-gold/10 via-brand-gold/5 to-transparent border border-brand-gold/20 p-6 rounded-2xl text-center shadow-sm">
+                <p class="text-brand-accent font-black text-base md:text-lg">ونسعد بخدمة جميع الأحياء المجاورة والمحيطة بمدينة الرياض بلا استثناء.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-20 bg-white relative">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-16 space-y-4">
+                <span class="text-brand-accent text-sm font-extrabold tracking-wider bg-brand-gold/20 border border-brand-gold/40 px-4 py-1.5 rounded-full">استفسارات متكررة</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-dark">الأسئلة الشائعة حول خدمات تركيب البلاط والسيراميك</h2>
+                <p class="text-brand-muted font-medium">إجابات كافية لتوضيح خطوات وخدمات التشطيب التي نوفرها بالرياض.</p>
+            </div>
+
+            <!-- Accordion List -->
             <div class="space-y-4">
-                <!-- FAQ 1 -->
-                <div class="bg-charcoal-light border border-white/10 rounded-xl overflow-hidden reveal fade-up">
-                    <button class="w-full p-6 text-right font-bold text-base sm:text-lg flex justify-between items-center hover:bg-white/5 transition-colors focus:outline-none" onclick="toggleAccordion('faq-1')">
+                <!-- Question 1 -->
+                <div class="bg-brand-bg border border-brand-border rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full p-6 text-right font-bold text-base sm:text-lg flex justify-between items-center hover:bg-brand-gold/10 transition-colors focus:outline-none" onclick="toggleAccordion('faq-1')">
                         <span>كم سعر تركيب السيراميك بالرياض؟</span>
-                        <i class="fa-solid fa-chevron-down text-gold transition-transform duration-300" id="icon-faq-1"></i>
+                        <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300" id="icon-faq-1"></i>
                     </button>
                     <div class="max-h-0 overflow-hidden transition-all duration-300" id="faq-1">
-                        <p class="p-6 pt-0 text-sm text-gray-300 leading-relaxed border-t border-white/5 bg-charcoal/40">
+                        <p class="p-6 pt-0 text-sm text-brand-muted leading-relaxed border-t border-brand-border bg-white font-medium">
                             يختلف سعر تركيب السيراميك والبورسلان بالرياض بناءً على مساحة المشروع ونوع البلاط المستخدم (سيراميك عادي، بورسلان كبير الحجم، رخام) ونوعية التركيب (بغراء أو خلطة أسمنتية). نقدم دائماً أسعاراً تنافسية مع ضمان جودة التشطيب، ويمكنك الحصول على تسعير فوري ومجاني بعد المعاينة.
                         </p>
                     </div>
                 </div>
 
-                <!-- FAQ 2 -->
-                <div class="bg-charcoal-light border border-white/10 rounded-xl overflow-hidden reveal fade-up" style="transition-delay: 50ms;">
-                    <button class="w-full p-6 text-right font-bold text-base sm:text-lg flex justify-between items-center hover:bg-white/5 transition-colors focus:outline-none" onclick="toggleAccordion('faq-2')">
+                <!-- Question 2 -->
+                <div class="bg-brand-bg border border-brand-border rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full p-6 text-right font-bold text-base sm:text-lg flex justify-between items-center hover:bg-brand-gold/10 transition-colors focus:outline-none" onclick="toggleAccordion('faq-2')">
                         <span>هل توفرون تركيب بورسلان كبير الحجم؟</span>
-                        <i class="fa-solid fa-chevron-down text-gold transition-transform duration-300" id="icon-faq-2"></i>
+                        <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300" id="icon-faq-2"></i>
                     </button>
                     <div class="max-h-0 overflow-hidden transition-all duration-300" id="faq-2">
-                        <p class="p-6 pt-0 text-sm text-gray-300 leading-relaxed border-t border-white/5 bg-charcoal/40">
+                        <p class="p-6 pt-0 text-sm text-brand-muted leading-relaxed border-t border-brand-border bg-white font-medium">
                             نعم، نحن متخصصون في تركيب وقص وتفصيل البورسلان كبير الحجم (الواجهات والأرضيات) باستخدام أحدث الأدوات والماكينات المخصصة لقص البورسلان لضمان تركيب مستوٍ تماماً ودون أي عيوب أو فراغات.
                         </p>
                     </div>
                 </div>
 
-                <!-- FAQ 3 -->
-                <div class="bg-charcoal-light border border-white/10 rounded-xl overflow-hidden reveal fade-up" style="transition-delay: 100ms;">
-                    <button class="w-full p-6 text-right font-bold text-base sm:text-lg flex justify-between items-center hover:bg-white/5 transition-colors focus:outline-none" onclick="toggleAccordion('faq-3')">
+                <!-- Question 3 -->
+                <div class="bg-brand-bg border border-brand-border rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full p-6 text-right font-bold text-base sm:text-lg flex justify-between items-center hover:bg-brand-gold/10 transition-colors focus:outline-none" onclick="toggleAccordion('faq-3')">
                         <span>هل تعملون في جميع أحياء الرياض؟</span>
-                        <i class="fa-solid fa-chevron-down text-gold transition-transform duration-300" id="icon-faq-3"></i>
+                        <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300" id="icon-faq-3"></i>
                     </button>
                     <div class="max-h-0 overflow-hidden transition-all duration-300" id="faq-3">
-                        <p class="p-6 pt-0 text-sm text-gray-300 leading-relaxed border-t border-white/5 bg-charcoal/40">
+                        <p class="p-6 pt-0 text-sm text-brand-muted leading-relaxed border-t border-brand-border bg-white font-medium">
                             نعم، نقدم خدماتنا في جميع أحياء الرياض بلا استثناء، بما في ذلك أحياء شمال الرياض (الياسمين، الملقا، النرجس، الصحافة، حطين)، شرق الرياض (اليرموك، قرطبة، الروضة)، غرب الرياض (لبن، نمار، السويدي)، وجنوب الرياض (الشفا، بدر، الحزم، الدار البيضاء).
                         </p>
                     </div>
                 </div>
 
-                <!-- FAQ 4 -->
-                <div class="bg-charcoal-light border border-white/10 rounded-xl overflow-hidden reveal fade-up" style="transition-delay: 150ms;">
-                    <button class="w-full p-6 text-right font-bold text-base sm:text-lg flex justify-between items-center hover:bg-white/5 transition-colors focus:outline-none" onclick="toggleAccordion('faq-4')">
+                <!-- Question 4 -->
+                <div class="bg-brand-bg border border-brand-border rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full p-6 text-right font-bold text-base sm:text-lg flex justify-between items-center hover:bg-brand-gold/10 transition-colors focus:outline-none" onclick="toggleAccordion('faq-4')">
                         <span>كم يستغرق تنفيذ المشروع؟</span>
-                        <i class="fa-solid fa-chevron-down text-gold transition-transform duration-300" id="icon-faq-4"></i>
+                        <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300" id="icon-faq-4"></i>
                     </button>
                     <div class="max-h-0 overflow-hidden transition-all duration-300" id="faq-4">
-                        <p class="p-6 pt-0 text-sm text-gray-300 leading-relaxed border-t border-white/5 bg-charcoal/40">
+                        <p class="p-6 pt-0 text-sm text-brand-muted leading-relaxed border-t border-brand-border bg-white font-medium">
                             تعتمد المدة الزمنية على مساحة وحجم العمل. الغرف والشقق الصغيرة قد تستغرق من يومين إلى 4 أيام، بينما الفلل والمشاريع الكبيرة يتم تحديد جدولها الزمني بدقة أثناء المعاينة مع التزامنا الكامل بالموعد المتفق عليه.
                         </p>
                     </div>
                 </div>
 
-                <!-- FAQ 5 -->
-                <div class="bg-charcoal-light border border-white/10 rounded-xl overflow-hidden reveal fade-up" style="transition-delay: 200ms;">
-                    <button class="w-full p-6 text-right font-bold text-base sm:text-lg flex justify-between items-center hover:bg-white/5 transition-colors focus:outline-none" onclick="toggleAccordion('faq-5')">
+                <!-- Question 5 -->
+                <div class="bg-brand-bg border border-brand-border rounded-2xl overflow-hidden reveal active">
+                    <button class="w-full p-6 text-right font-bold text-base sm:text-lg flex justify-between items-center hover:bg-brand-gold/10 transition-colors focus:outline-none" onclick="toggleAccordion('faq-5')">
                         <span>هل توجد معاينة قبل التنفيذ؟</span>
-                        <i class="fa-solid fa-chevron-down text-gold transition-transform duration-300" id="icon-faq-5"></i>
+                        <i class="fa-solid fa-chevron-down text-brand-accent transition-transform duration-300" id="icon-faq-5"></i>
                     </button>
                     <div class="max-h-0 overflow-hidden transition-all duration-300" id="faq-5">
-                        <p class="p-6 pt-0 text-sm text-gray-300 leading-relaxed border-t border-white/5 bg-charcoal/40">
+                        <p class="p-6 pt-0 text-sm text-brand-muted leading-relaxed border-t border-brand-border bg-white font-medium">
                             نعم، نوفر خدمة المعاينة المجانية لجميع أحياء الرياض. يقوم الفني بزيارة الموقع، فحص استواء الأرضيات، وقياس المساحات بدقة وتقديم استشارة مجانية مع مقايسة أسعار تفصيلية.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ 6 -->
-                <div class="bg-charcoal-light border border-white/10 rounded-xl overflow-hidden reveal fade-up" style="transition-delay: 250ms;">
-                    <button class="w-full p-6 text-right font-bold text-base sm:text-lg flex justify-between items-center hover:bg-white/5 transition-colors focus:outline-none" onclick="toggleAccordion('faq-6')">
-                        <span>هل توفرون مواد التركيب؟</span>
-                        <i class="fa-solid fa-chevron-down text-gold transition-transform duration-300" id="icon-faq-6"></i>
-                    </button>
-                    <div class="max-h-0 overflow-hidden transition-all duration-300" id="faq-6">
-                        <p class="p-6 pt-0 text-sm text-gray-300 leading-relaxed border-t border-white/5 bg-charcoal/40">
-                            يمكننا توفير كافة مواد التركيب عالية الجودة (مثل الغراء الممتاز، الترويبة المقاومة للرطوبة، زوايا الألمنيوم أو الاستيل) أو العمل بالمواد التي يختارها ويوفرها العميل حسب رغبته وميزانيته.
                         </p>
                     </div>
                 </div>
@@ -1226,43 +1004,43 @@
         </div>
     </section>
 
-    <!-- FINAL CTA SECTION (Numbers Side-By-Side) -->
-    <section class="py-20 relative bg-cover bg-center" style="background-image: linear-gradient(to top, rgba(13,13,13,0.95), rgba(13,13,13,0.85)), url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80');">
-        <div class="container mx-auto px-4 max-w-4xl text-center space-y-8 relative z-10">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight">
-                تبحث عن فني سيراميك محترف بالرياض؟
+    <!-- CONTACT CTA SECTION -->
+    <section class="py-20 bg-brand-bg relative">
+        <div class="container mx-auto px-4 max-w-4xl text-center space-y-8">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-brand-dark leading-tight">
+                هل تبحث عن فني تركيب سيراميك محترف بالرياض؟
             </h2>
-            <p class="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-                تواصل الآن واحصل على معاينة سريعة وتسعير واضح وخدمة احترافية من البداية حتى التسليم.
+            <p class="text-base sm:text-lg md:text-xl text-brand-muted leading-relaxed max-w-2xl mx-auto font-medium">
+                يسعدنا خدمتك في أي وقت وتلبية تطلعاتك. تواصل معنا الآن واحصل على مقايسة واضحة ودقيقة.
             </p>
 
-            <!-- Both Numbers Displayed Side-By-Side with Call and WhatsApp links -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto pt-4 reveal zoom-in">
-                <!-- Box Number 1 (0506218313) -->
-                <div class="bg-charcoal/80 border-2 border-gold/30 hover:border-gold p-6 rounded-2xl backdrop-blur-md transition-all duration-300 space-y-4">
-                    <div class="text-gold text-lg font-bold">الاتصال أو الواتساب (1)</div>
-                    <div class="text-2xl font-mono font-black text-white">0506218313</div>
+            <!-- Numbers Cards side by side -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto pt-4 reveal active">
+                <!-- Card 1 -->
+                <div class="bg-white border border-brand-border hover:border-brand-accent p-6 rounded-3xl transition-all duration-300 space-y-4 shadow-sm">
+                    <div class="text-brand-accent text-base font-bold">رقم التواصل المباشر (1)</div>
+                    <div class="text-2xl font-mono font-black text-brand-dark">0506218313</div>
                     <div class="flex gap-2">
-                        <a href="tel:0506218313" class="flex-1 bg-gradient-to-r from-orangeCta to-orangeCta-hover hover:from-orangeCta-hover hover:to-orangeCta text-white text-center py-2.5 rounded-lg font-extrabold text-sm flex items-center justify-center space-x-1.5 space-x-reverse transition-all duration-300 shadow-md">
+                        <a href="tel:0506218313" class="flex-1 bg-brand-accent hover:bg-amber-600 text-white text-center py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition-all duration-300 shadow-sm">
                             <i class="fa-solid fa-phone"></i>
                             <span>اتصال هاتفي</span>
                         </a>
-                        <a href="https://wa.me/966506218313?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D9%83" target="_blank" class="bg-[#25D366] hover:bg-[#20ba59] text-white text-center px-3 py-2.5 rounded-lg font-extrabold text-sm flex items-center justify-center transition-all duration-300">
+                        <a href="https://wa.me/966506218313?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1" target="_blank" class="bg-[#22C55E] hover:bg-green-600 text-white text-center px-4 py-2.5 rounded-xl font-bold text-sm flex items-center justify-center transition-all duration-300">
                             <i class="fa-brands fa-whatsapp text-lg"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Box Number 2 (0590409465) -->
-                <div class="bg-charcoal/80 border-2 border-gold/30 hover:border-gold p-6 rounded-2xl backdrop-blur-md transition-all duration-300 space-y-4">
-                    <div class="text-gold text-lg font-bold">الاتصال أو الواتساب (2)</div>
-                    <div class="text-2xl font-mono font-black text-white">0590409465</div>
+                <!-- Card 2 -->
+                <div class="bg-white border border-brand-border hover:border-brand-accent p-6 rounded-3xl transition-all duration-300 space-y-4 shadow-sm">
+                    <div class="text-brand-accent text-base font-bold">رقم التواصل المباشر (2)</div>
+                    <div class="text-2xl font-mono font-black text-brand-dark">0590409465</div>
                     <div class="flex gap-2">
-                        <a href="tel:0590409465" class="flex-1 bg-gradient-to-r from-orangeCta to-orangeCta-hover hover:from-orangeCta-hover hover:to-orangeCta text-white text-center py-2.5 rounded-lg font-extrabold text-sm flex items-center justify-center space-x-1.5 space-x-reverse transition-all duration-300 shadow-md">
+                        <a href="tel:0590409465" class="flex-1 bg-brand-accent hover:bg-amber-600 text-white text-center py-2.5 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition-all duration-300 shadow-sm">
                             <i class="fa-solid fa-phone"></i>
                             <span>اتصال هاتفي</span>
                         </a>
-                        <a href="https://wa.me/966590409465?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%20%D8%A7%D9%84%D8%B3%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D9%83" target="_blank" class="bg-[#25D366] hover:bg-[#20ba59] text-white text-center px-3 py-2.5 rounded-lg font-extrabold text-sm flex items-center justify-center transition-all duration-300">
+                        <a href="https://wa.me/966590409465?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1" target="_blank" class="bg-[#22C55E] hover:bg-green-600 text-white text-center px-4 py-2.5 rounded-xl font-bold text-sm flex items-center justify-center transition-all duration-300">
                             <i class="fa-brands fa-whatsapp text-lg"></i>
                         </a>
                     </div>
@@ -1272,59 +1050,59 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-charcoal border-t border-white/10 pt-16 pb-8">
+    <footer class="bg-brand-dark text-stone-300 pt-16 pb-8 border-t border-stone-800">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 text-right">
-            <!-- Col 1: About & Info -->
+            <!-- Col 1: About -->
             <div class="space-y-4">
-                <a href="#" class="flex items-center space-x-2 space-x-reverse">
-                    <div class="w-10 h-10 bg-gradient-to-br from-gold to-gold-dark rounded-lg flex items-center justify-center text-charcoal shadow-lg">
-                        <i class="fa-solid fa-hard-hat text-lg"></i>
+                <a href="#" class="flex items-center gap-2.5">
+                    <div class="w-10 h-10 bg-brand-accent rounded-xl flex items-center justify-center text-white shadow-md">
+                        <i class="fa-solid fa-table-cells text-lg"></i>
                     </div>
-                    <span class="text-lg font-extrabold text-white leading-tight">معلم سيراميك الرياض</span>
+                    <span class="text-lg font-black text-white leading-tight">معلم سيراميك الرياض</span>
                 </a>
-                <p class="text-sm text-gray-400 leading-relaxed">
-                    نحن متخصصون في جميع أعمال تركيب البلاط والسيراميك والبورسلان للقصور والفلل والمشاريع الحكومية والخاصة بالرياض بأعلى مستويات الجودة.
+                <p class="text-sm text-stone-400 leading-relaxed font-medium">
+                    متخصصون في تنفيذ جميع أعمال تركيب البلاط والسيراميك والبورسلان للقصور والفلل والمشاريع السكنية والتجارية بالرياض بأعلى مستويات الجودة والضمان.
                 </p>
-                <div class="flex items-center space-x-3 space-x-reverse text-gold">
-                    <i class="fa-solid fa-clock text-sm"></i>
-                    <span class="text-xs text-gray-300">متاحون طوال الأسبوع على مدار 24 ساعة</span>
+                <div class="flex items-center gap-2 text-brand-gold text-xs font-bold">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>متاحون طوال الأسبوع على مدار 24 ساعة</span>
                 </div>
             </div>
 
-            <!-- Col 2: Quick Links -->
+            <!-- Col 2: Navigation -->
             <div class="space-y-4">
-                <h4 class="text-lg font-bold text-white relative pb-2 after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-12 after:h-0.5 after:bg-gold">روابط سريعة</h4>
-                <ul class="space-y-2 text-sm text-gray-400">
-                    <li><a href="#services" class="hover:text-gold transition-colors">خدمات السيراميك والبورسلان</a></li>
-                    <li><a href="#why-us" class="hover:text-gold transition-colors">لماذا تختارنا؟</a></li>
-                    <li><a href="#gallery" class="hover:text-gold transition-colors">معرض الصور والأعمال</a></li>
-                    <li><a href="#coverage" class="hover:text-gold transition-colors">مناطق وأحياء الرياض المشمولة</a></li>
-                    <li><a href="#faq" class="hover:text-gold transition-colors">الأسئلة المتداولة</a></li>
+                <h4 class="text-lg font-bold text-white relative pb-2 after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-10 after:h-0.5 after:bg-brand-accent">روابط سريعة</h4>
+                <ul class="space-y-2.5 text-sm text-stone-400 font-bold">
+                    <li><a href="#services" class="hover:text-brand-accent transition-colors">خدمات السيراميك والبورسلان</a></li>
+                    <li><a href="#why-us" class="hover:text-brand-accent transition-colors">لماذا تختارنا؟</a></li>
+                    <li><a href="#gallery" class="hover:text-brand-accent transition-colors">معرض صور الأعمال</a></li>
+                    <li><a href="#coverage" class="hover:text-brand-accent transition-colors">مناطق وأحياء التغطية</a></li>
+                    <li><a href="#faq" class="hover:text-brand-accent transition-colors">الأسئلة المتداولة</a></li>
                 </ul>
             </div>
 
-            <!-- Col 3: Phone distribution in footer -->
+            <!-- Col 3: Contacts -->
             <div class="space-y-4">
-                <h4 class="text-lg font-bold text-white relative pb-2 after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-12 after:h-0.5 after:bg-gold">أرقام التواصل</h4>
+                <h4 class="text-lg font-bold text-white relative pb-2 after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-10 after:h-0.5 after:bg-brand-accent">أرقام التواصل</h4>
                 <ul class="space-y-4 text-sm">
                     <li class="space-y-1">
-                        <span class="text-xs text-gray-500 block">خدمة العملاء (الرقم 1)</span>
-                        <a href="tel:0506218313" class="text-white hover:text-gold font-bold font-mono text-base flex items-center space-x-1.5 space-x-reverse justify-end">
-                            <i class="fa-solid fa-phone text-xs text-gold"></i>
+                        <span class="text-xs text-stone-500 block">خدمة العملاء (الرقم 1)</span>
+                        <a href="tel:0506218313" class="text-white hover:text-brand-accent font-bold font-mono text-base flex items-center gap-1.5 justify-end">
+                            <i class="fa-solid fa-phone text-xs text-brand-accent"></i>
                             <span>0506218313</span>
                         </a>
-                        <a href="https://wa.me/966506218313" target="_blank" class="text-xs text-[#25D366] hover:underline flex items-center space-x-1 space-x-reverse justify-end">
+                        <a href="https://wa.me/966506218313" target="_blank" class="text-xs text-[#22C55E] hover:underline flex items-center gap-1 justify-end">
                             <i class="fa-brands fa-whatsapp text-sm"></i>
                             <span>تواصل عبر الواتساب</span>
                         </a>
                     </li>
                     <li class="space-y-1">
-                        <span class="text-xs text-gray-500 block">الحجوزات والاستفسارات (الرقم 2)</span>
-                        <a href="tel:0590409465" class="text-white hover:text-gold font-bold font-mono text-base flex items-center space-x-1.5 space-x-reverse justify-end">
-                            <i class="fa-solid fa-phone text-xs text-gold"></i>
+                        <span class="text-xs text-stone-500 block">الحجوزات والاستفسارات (الرقم 2)</span>
+                        <a href="tel:0590409465" class="text-white hover:text-brand-accent font-bold font-mono text-base flex items-center gap-1.5 justify-end">
+                            <i class="fa-solid fa-phone text-xs text-brand-accent"></i>
                             <span>0590409465</span>
                         </a>
-                        <a href="https://wa.me/966590409465" target="_blank" class="text-xs text-[#25D366] hover:underline flex items-center space-x-1 space-x-reverse justify-end">
+                        <a href="https://wa.me/966590409465" target="_blank" class="text-xs text-[#22C55E] hover:underline flex items-center gap-1 justify-end">
                             <i class="fa-brands fa-whatsapp text-sm"></i>
                             <span>تواصل عبر الواتساب</span>
                         </a>
@@ -1332,40 +1110,39 @@
                 </ul>
             </div>
 
-            <!-- Col 4: Coverage tag list -->
+            <!-- Col 4: Tags -->
             <div class="space-y-4">
-                <h4 class="text-lg font-bold text-white relative pb-2 after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-12 after:h-0.5 after:bg-gold">أحياء مغطاة</h4>
+                <h4 class="text-lg font-bold text-white relative pb-2 after:content-[''] after:absolute after:bottom-0 after:right-0 after:w-10 after:h-0.5 after:bg-brand-accent">أحياء مغطاة</h4>
                 <div class="flex flex-wrap gap-2 pt-2">
-                    <span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded text-xs text-gray-300">الياسمين</span>
-                    <span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded text-xs text-gray-300">الملقا</span>
-                    <span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded text-xs text-gray-300">النرجس</span>
-                    <span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded text-xs text-gray-300">الصحافة</span>
-                    <span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded text-xs text-gray-300">حطين</span>
-                    <span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded text-xs text-gray-300">اليرموك</span>
-                    <span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded text-xs text-gray-300">قرطبة</span>
-                    <span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded text-xs text-gray-300">لبن</span>
-                    <span class="bg-white/5 border border-white/10 px-2.5 py-1 rounded text-xs text-gray-300">السويدي</span>
+                    <span class="bg-stone-800 border border-stone-700 px-2.5 py-1 rounded text-xs text-stone-400">الملقا</span>
+                    <span class="bg-stone-800 border border-stone-700 px-2.5 py-1 rounded text-xs text-stone-400">الياسمين</span>
+                    <span class="bg-stone-800 border border-stone-700 px-2.5 py-1 rounded text-xs text-stone-400">النرجس</span>
+                    <span class="bg-stone-800 border border-stone-700 px-2.5 py-1 rounded text-xs text-stone-400">الصحافة</span>
+                    <span class="bg-stone-800 border border-stone-700 px-2.5 py-1 rounded text-xs text-stone-400">حطين</span>
+                    <span class="bg-stone-800 border border-stone-700 px-2.5 py-1 rounded text-xs text-stone-400">اليرموك</span>
+                    <span class="bg-stone-800 border border-stone-700 px-2.5 py-1 rounded text-xs text-stone-400">قرطبة</span>
+                    <span class="bg-stone-800 border border-stone-700 px-2.5 py-1 rounded text-xs text-stone-400">السويدي</span>
                 </div>
             </div>
         </div>
 
         <!-- Copyright -->
-        <div class="container mx-auto px-4 mt-16 pt-8 border-t border-white/5 text-center text-xs text-gray-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="container mx-auto px-4 mt-16 pt-8 border-t border-stone-800 text-center text-xs text-stone-500 flex flex-col sm:flex-row items-center justify-between gap-4 font-bold">
             <p>جميع الحقوق محفوظة &copy; 2026. فني سيراميك بالرياض - معلم تركيب بلاط وسيراميك.</p>
-            <p class="text-[10px] text-gray-600">تم التطوير بجودة متناهية واحترافية تسويقية كاملة.</p>
+            <p class="text-[10px] text-stone-600">تصميم راقٍ ومطوّر بالكامل للأجهزة المحمولة.</p>
         </div>
     </footer>
 
-    <!-- FLOATING WHATSAPP BUTTON (DYNAMIC ROTATION 50/50 BETWEEN BOTH NUMBERS) -->
-    <a href="#" onclick="handleWhatsAppFloatingClick(event)" id="floating-whatsapp-btn" class="fixed bottom-6 left-6 z-50 bg-[#25D366] hover:bg-[#20ba59] w-14 h-14 rounded-full flex items-center justify-center text-white text-3xl shadow-2xl hover:scale-110 transition-transform duration-300 group" aria-label="تواصل معنا عبر واتساب">
+    <!-- DYNAMIC ROTATION FLOATING WHATSAPP BUTTON -->
+    <a href="#" onclick="handleWhatsAppFloatingClick(event)" id="floating-whatsapp-btn" class="fixed bottom-6 left-6 z-50 bg-[#22C55E] hover:bg-[#16A34A] w-14 h-14 rounded-full flex items-center justify-center text-white text-3xl shadow-2xl hover:scale-110 transition-transform duration-300 group" aria-label="تواصل معنا عبر واتساب">
         <i class="fa-brands fa-whatsapp"></i>
         <!-- Tooltip -->
-        <span class="absolute right-16 bg-charcoal border border-gold/40 text-gold text-xs font-bold py-1.5 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap shadow-xl">
+        <span class="absolute right-16 bg-white border border-brand-border text-brand-accent text-xs font-bold py-1.5 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap shadow-md">
             راسلنا واتساب مباشر
         </span>
     </a>
 
-    <!-- Embedded JavaScript for Interactive Functions & Animations -->
+    <!-- JAVASCRIPT FOR ACTIONS & ACCORDIONS -->
     <script>
         // Form Submission Logic
         function submitForm(event) {
@@ -1403,23 +1180,20 @@
             }
         }
 
-        // FLOATING WHATSAPP BUTTON DYNAMIC ROTATION
-        // Alternates 50% between both numbers dynamically for every click or based on random generation
+        // FLOATING WHATSAPP BUTTON DYNAMIC ROTATION (50/50 randomly)
         function handleWhatsAppFloatingClick(event) {
             event.preventDefault();
             const number1 = '966506218313';
             const number2 = '966590409465';
             
-            // 50/50 Random Distribution
             const chosenNumber = Math.random() < 0.5 ? number1 : number2;
             const message = encodeURIComponent('مرحباً، أرغب في الاستفسار عن خدمات تركيب السيراميك والبورسلان بالرياض وحجز موعد معاينة مجانية.');
             const whatsappUrl = `https://wa.me/${chosenNumber}?text=${message}`;
             
-            // Open in a new tab
             window.open(whatsappUrl, '_blank');
         }
 
-        // Intersection Observer for Scroll Reveal Animations
+        // Intersection Observer for animations
         document.addEventListener("DOMContentLoaded", function () {
             const reveals = document.querySelectorAll(".reveal");
 
@@ -1427,55 +1201,29 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add("active");
-                        // If it contains counter element, trigger counter animation
-                        const counters = entry.target.querySelectorAll(".counter");
-                        counters.forEach(counter => {
-                            if (!counter.classList.contains('animated')) {
-                                counter.classList.add('animated');
-                                animateCounter(counter);
-                            }
-                        });
                         observer.unobserve(entry.target);
                     }
                 });
             }, {
-                threshold: 0.15
+                threshold: 0.1
             });
 
             reveals.forEach(reveal => {
                 revealObserver.observe(reveal);
             });
 
-            // Sticky Header background transition on scroll
+            // Sticky Header py adjust on scroll
             window.addEventListener('scroll', function () {
                 const header = document.querySelector('header');
-                if (window.scrollY > 50) {
-                    header.classList.add('shadow-xl', 'py-2');
-                    header.classList.remove('py-3');
+                if (window.scrollY > 40) {
+                    header.classList.add('shadow-md', 'py-1.5');
+                    header.classList.remove('py-2.5');
                 } else {
-                    header.classList.remove('shadow-xl', 'py-2');
-                    header.classList.add('py-3');
+                    header.classList.remove('shadow-md', 'py-1.5');
+                    header.classList.add('py-2.5');
                 }
             });
         });
-
-        // Counter Animation Function
-        function animateCounter(counterElement) {
-            const target = +counterElement.getAttribute('data-target');
-            const duration = 2000; // 2 seconds animation
-            const stepTime = Math.max(Math.floor(duration / target), 15);
-            let current = 0;
-            
-            const timer = setInterval(() => {
-                current += Math.ceil(target / (duration / stepTime));
-                if (current >= target) {
-                    counterElement.innerText = target;
-                    clearInterval(timer);
-                } else {
-                    counterElement.innerText = current;
-                }
-            }, stepTime);
-        }
     </script>
 </body>
 </html>
